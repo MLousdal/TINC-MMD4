@@ -5,19 +5,9 @@ export default defineNuxtConfig({
   modules: ['nuxt-shopify'],
 
   shopify: {
-    /**
-     * Your shopify domain
-     */
     domain: 'your-shop-name.myshopify.com',
-
-    /**
-     * Your shopify storefront access token
-     */
     storefrontAccessToken: 'your-storefront-access-token',
-
-    /**
-     * Set language to return translated content (optional)
-     */
-    // language: 'ja-JP',
   },
+
+  css: ['@/assets/scss/main.scss']
 })
