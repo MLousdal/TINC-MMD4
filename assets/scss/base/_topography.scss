@@ -43,7 +43,7 @@ h2 {
   max-inline-size: var(--size-header-2);
   &::before {
     content: "";
-    background-image: url("assets/title-blob.svg");
+    background-image: url("/title-blob.svg");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
