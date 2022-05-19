@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Inter", var(--font-sans);
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--font-size-2);
   line-height: var(--font-lineheight-3);
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", var(--font-serif);
+  font-family: var(--font-serif);
   line-height: var(--font-lineheight-1);
   font-weight: var(--font-weight-7);
   position: relative;
@@ -110,10 +110,10 @@ a {
   margin-block: calc(var(--size-1) * -1);
 
   &[href] {
-    text-decoration-color: var(--indigo-2);
+    text-decoration-color: var(--brand);
 
     &:visited {
-      text-decoration-color: var(--grape-2);
+      text-decoration-color: var(--link-visited);
     }
   }
 

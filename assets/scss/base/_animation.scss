@@ -1,10 +1,9 @@
 .underline {
   padding-bottom: 2px;
-  background: linear-gradient(var(--color-secondary), var(--color-secondary))
-    bottom;
+  background: linear-gradient(var(--text-2), var(--text-2)) bottom;
   background-size: 0% 2px;
   background-repeat: no-repeat;
-  transition: all 0.45s;
+  transition: background-size 0.2s linear;
 
   &:hover,
   &:focus {
