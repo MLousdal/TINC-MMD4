@@ -3,7 +3,7 @@
 <template>
   <nav class="navbar">
     <NuxtLink to="/">
-      <img src="assets/logo.svg" alt="" />
+      <img src="~/assets/logo.svg" alt="" />
     </NuxtLink>
     <div class="nav-links">
       <div class="sub-menu">
@@ -75,13 +75,13 @@
     </div>
     <div class="user-links">
       <NuxtLink to="profile"
-        ><img src="assets/icons/user.svg" alt=""
+        ><img src="~/assets/icons/user.svg" alt=""
       /></NuxtLink>
       <NuxtLink to="profile/wishlist"
-        ><img src="assets/icons/heart.svg" alt=""
+        ><img src="~/assets/icons/heart.svg" alt=""
       /></NuxtLink>
       <NuxtLink to="cart"
-        ><img src="assets/icons/basket.svg" alt=""
+        ><img src="~/assets/icons/basket.svg" alt=""
       /></NuxtLink>
     </div>
   </nav>
