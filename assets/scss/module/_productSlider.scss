@@ -1,0 +1,13 @@
+.product-slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  display: flex;
+  gap: var(--size-3);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+  width: fit-content;
+
+  &::-webkit-scrollbar {
+    // display: none;
+  }
+}

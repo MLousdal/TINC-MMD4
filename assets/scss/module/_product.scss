@@ -1,0 +1,40 @@
+.product {
+  flex: 1 1 350px;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+  position: relative;
+  padding: var(--size-3);
+
+  &[href] {
+    color: var(--text-2);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+.addToCartBtn,
+.favoriteBtn {
+  padding: var(--size-2);
+  background-color: var(--surface-1);
+}
+
+.favoriteBtn {
+  // width: var(--size-4);
+  // height: var(--size-4);
+  position: absolute;
+  top: var(--size-4);
+  right: var(--size-4);
+}

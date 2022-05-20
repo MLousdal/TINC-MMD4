@@ -1,3 +1,38 @@
+<script setup>
+const products = [
+  {
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    link: "/product",
+    img: "/images/product.png",
+  },
+  {
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    link: "/product",
+    img: "/images/product.png",
+  },
+  {
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    link: "/product",
+    img: "/images/product.png",
+  },
+  {
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    link: "/product",
+    img: "/images/product.png",
+  },
+  {
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    link: "/product",
+    img: "/images/product.png",
+  },
+];
+</script>
+
 <template>
   <div>
     <header>
@@ -12,6 +47,7 @@
     </nav>
     <section>
       <SectionHeader title="Nyheder" link="/"></SectionHeader>
+      <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
       <SectionHeader

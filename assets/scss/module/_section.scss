@@ -9,17 +9,19 @@ section {
 
 .se-mere {
   align-items: center;
-  color: var(--text-2) !important;
   display: flex;
   font-size: var(--font-size-2);
   gap: var(--size-3);
 
+  &[href] {
+    color: var(--text-2);
+    &:visited {
+      color: var(--text-2) !important;
+    }
+  }
+
   &:hover {
     font-weight: 700;
     text-decoration: none;
-  }
-
-  &:visited {
-    color: var(--text-2) !important;
   }
 }
