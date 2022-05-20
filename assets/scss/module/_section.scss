@@ -1,0 +1,25 @@
+section {
+  gap: var(--size-8);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.se-mere {
+  align-items: center;
+  color: var(--text-2) !important;
+  display: flex;
+  font-size: var(--font-size-2);
+  gap: var(--size-3);
+
+  &:hover {
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: var(--text-2) !important;
+  }
+}

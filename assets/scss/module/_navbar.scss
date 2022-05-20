@@ -29,6 +29,10 @@
       font-weight: 700;
       text-decoration: none;
     }
+
+    &:visited {
+      color: var(--text-2);
+    }
   }
 }
 

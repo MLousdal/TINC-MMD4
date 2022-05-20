@@ -1,0 +1,15 @@
+.om-tinc {
+  display: flex;
+  flex-direction: row;
+  columns: 3;
+  gap: var(--size-7);
+  align-items: flex-start;
+
+  article {
+    flex: 1 0 1px;
+  }
+
+  header {
+    display: block;
+  }
+}
