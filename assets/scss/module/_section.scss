@@ -15,9 +15,6 @@ section {
 
   &[href] {
     color: var(--text-2);
-    &:visited {
-      color: var(--text-2) !important;
-    }
   }
 
   &:hover {

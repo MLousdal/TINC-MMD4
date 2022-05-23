@@ -24,14 +24,11 @@
     font-size: var(--font-size-2);
     transition: font-weight 0.2s linear;
     height: fit-content;
+    white-space: nowrap;
 
     &:hover {
       font-weight: 700;
       text-decoration: none;
-    }
-
-    &:visited {
-      color: var(--text-2);
     }
   }
 }

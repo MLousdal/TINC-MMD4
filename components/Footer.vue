@@ -4,11 +4,15 @@
       <div class="footer-column">
         <h3>Kontakt</h3>
         <ul>
-          <li class="flex flex-gap-1">
-            <img src="/icons/email.svg" alt="" />kontakt@tinc.shop
+          <li class="flex flex-gap-1 flex-align-center">
+            <img
+              src="/icons/email.svg"
+              alt=""
+              class="icon m"
+            />kontakt@tinc.shop
           </li>
-          <li class="flex flex-gap-1">
-            <img src="/icons/phone.svg" alt="" />25 50 54 45
+          <li class="flex flex-gap-1 flex-align-center">
+            <img src="/icons/phone.svg" alt="" class="icon m" />25 50 54 45
           </li>
           <li>CVR: 38459570</li>
           <hr />

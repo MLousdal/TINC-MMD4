@@ -109,14 +109,6 @@ a {
   padding-block: var(--size-1);
   margin-block: calc(var(--size-1) * -1);
 
-  &[href] {
-    text-decoration-color: inherit;
-
-    &:visited {
-      text-decoration-color: inherit;
-    }
-  }
-
   &:not(:hover) {
     text-decoration: inherit;
   }

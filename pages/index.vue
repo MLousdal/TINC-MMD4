@@ -101,6 +101,71 @@ const blogPosts = [
     title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
   },
 ];
+const testimonials = [
+  {
+    date: "02/04/22",
+    // img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    // img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    // img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+  {
+    date: "02/04/22",
+    // img: "/images/diana-light.jpg",
+    name: "Eleanor Pena",
+    rating: 4,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    verified: true,
+  },
+];
 </script>
 
 <template>
@@ -135,6 +200,12 @@ const blogPosts = [
           :title="blogPost.title"
         ></BlogPost>
       </div>
+    </section>
+    <section>
+      <header>
+        <h2>Det siger vores kunder</h2>
+      </header>
+      <TestimonialCarousel :testimonials="testimonials"></TestimonialCarousel>
     </section>
     <section>
       <SectionHeader

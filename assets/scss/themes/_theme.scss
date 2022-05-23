@@ -42,10 +42,6 @@ dt {
 
 a[href] {
   color: var(--link);
-
-  &:visited {
-    color: var(--link-visited);
-  }
 }
 
 :focus-visible {
