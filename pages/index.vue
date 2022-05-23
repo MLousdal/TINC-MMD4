@@ -120,7 +120,7 @@ const blogPosts = [
       <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
-      <SectionHeader title="Kategorier" noLink></SectionHeader>
+      <SectionHeader title="Kategorier" link="/" noLink></SectionHeader>
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
@@ -136,7 +136,6 @@ const blogPosts = [
         ></BlogPost>
       </div>
     </section>
-
     <section>
       <SectionHeader
         title="Om TINC"
