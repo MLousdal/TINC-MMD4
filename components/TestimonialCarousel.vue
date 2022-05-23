@@ -1,4 +1,6 @@
 <script setup>
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+
 defineProps({
   testimonials: { type: Array, required: true },
 });
