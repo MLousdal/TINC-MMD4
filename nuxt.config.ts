@@ -11,6 +11,12 @@ export default defineNuxtConfig({
 
   css: ["@/assets/scss/main.scss"],
 
+  vue: {
+    compilerOptions: {
+      isCustomElement: tag => ['Splide', 'SplideSlide'].includes(tag)
+    }
+  },
+
   app: {
     head: {
       title:

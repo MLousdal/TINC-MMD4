@@ -3,78 +3,78 @@ const products = [
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    link: "/",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    link: "/",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    link: "/",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    link: "/",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    link: "/",
     img: "/images/product.png",
   },
 ];
 const categories = [
   {
     name: "Fødevare",
-    link: "/product",
+    link: "/",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/product",
+    link: "/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/product",
+    link: "/",
     img: "/images/ella-olsson.jpg",
   },
   {
     name: "Fødevare",
-    link: "/product",
+    link: "/",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/product",
+    link: "/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/product",
+    link: "/",
     img: "/images/ella-olsson.jpg",
   },
   {
     name: "Fødevare",
-    link: "/product",
+    link: "/",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/product",
+    link: "/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/product",
+    link: "/",
     img: "/images/ella-olsson.jpg",
   },
 ];
@@ -83,21 +83,21 @@ const blogPosts = [
     author: "Amalie A.",
     date: "02/04/22",
     img: "/images/diana-light.jpg",
-    link: "/blogPost",
+    link: "/",
     title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
   },
   {
     author: "Amalie A.",
     date: "02/04/22",
     img: "/images/ella-olsson.jpg",
-    link: "/blogPost",
+    link: "/",
     title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
   },
   {
     author: "Amalie A.",
     date: "02/04/22",
     img: "/images/anh-nguyen.jpg",
-    link: "/blogPost",
+    link: "/",
     title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
   },
 ];
@@ -189,7 +189,7 @@ const testimonials = [
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
-      <SectionHeader title="Blog indlæg" link="/blog"></SectionHeader>
+      <SectionHeader title="Blog indlæg" link="/"></SectionHeader>
       <div class="blog-posts">
         <BlogPost
           v-for="blogPost in blogPosts"
@@ -208,11 +208,7 @@ const testimonials = [
       <TestimonialCarousel :testimonials="testimonials"></TestimonialCarousel>
     </section>
     <section>
-      <SectionHeader
-        title="Om TINC"
-        link="/om-tinc"
-        more="læs mere"
-      ></SectionHeader>
+      <SectionHeader title="Om TINC" link="/" more="læs mere"></SectionHeader>
       <div class="om-tinc">
         <article>
           <h3>

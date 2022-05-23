@@ -7,78 +7,68 @@
     </NuxtLink>
     <div class="nav-links">
       <div class="sub-menu">
-        <NuxtLink to="personlig-pleje" class="underline"
-          >Personlig pleje</NuxtLink
-        >
+        <NuxtLink to="/" class="underline">Personlig pleje</NuxtLink>
         <div class="sub-menu-content">
-          <NuxtLink to="kropspleje" class="underline">Kropspleje</NuxtLink>
-          <NuxtLink to="kosmetik" class="underline">Kosmetik</NuxtLink>
-          <NuxtLink to="har" class="underline">Hår</NuxtLink>
-          <NuxtLink to="hygiejne" class="underline">Hygiejne</NuxtLink>
-          <NuxtLink to="tandpleje" class="underline">Tandpleje</NuxtLink>
-          <NuxtLink to="bad-og-saebe" class="underline">Bad og sæbe</NuxtLink>
-          <NuxtLink to="mor-og-barn" class="underline">Mor & barn</NuxtLink>
-          <NuxtLink to="naturlige-olier" class="underline"
+          <NuxtLink to="/" class="underline">Kropspleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Kosmetik</NuxtLink>
+          <NuxtLink to="/" class="underline">Hår</NuxtLink>
+          <NuxtLink to="/" class="underline">Hygiejne</NuxtLink>
+          <NuxtLink to="/" class="underline">Tandpleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Bad og sæbe</NuxtLink>
+          <NuxtLink to="/" class="underline">Mor & barn</NuxtLink>
+          <NuxtLink to="/" class="underline"
             >Natulige olier & kosmetriske råvare</NuxtLink
           >
-          <NuxtLink to="rondeller-og-vatpinde" class="underline"
-            >Rondeller og vatpinde</NuxtLink
-          >
-          <NuxtLink to="tilbehor" class="underline">Tilbehør</NuxtLink>
+          <NuxtLink to="/" class="underline">Rondeller og vatpinde</NuxtLink>
+          <NuxtLink to="/" class="underline">Tilbehør</NuxtLink>
         </div>
       </div>
       <div class="sub-menu">
-        <NuxtLink to="husholdning" class="underline">Husholdning</NuxtLink>
+        <NuxtLink to="/" class="underline">Husholdning</NuxtLink>
         <div class="sub-menu-content">
-          <NuxtLink to="kropspleje" class="underline">Kropspleje</NuxtLink>
-          <NuxtLink to="kosmetik" class="underline">Kosmetik</NuxtLink>
-          <NuxtLink to="har" class="underline">Hår</NuxtLink>
-          <NuxtLink to="hygiejne" class="underline">Hygiejne</NuxtLink>
-          <NuxtLink to="tandpleje" class="underline">Tandpleje</NuxtLink>
-          <NuxtLink to="bad-og-saebe" class="underline">Bad og sæbe</NuxtLink>
-          <NuxtLink to="mor-og-barn" class="underline">Mor & barn</NuxtLink>
-          <NuxtLink to="naturlige-olier" class="underline"
+          <NuxtLink to="/" class="underline">Kropspleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Kosmetik</NuxtLink>
+          <NuxtLink to="/" class="underline">Hår</NuxtLink>
+          <NuxtLink to="/" class="underline">Hygiejne</NuxtLink>
+          <NuxtLink to="/" class="underline">Tandpleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Bad og sæbe</NuxtLink>
+          <NuxtLink to="/" class="underline">Mor & barn</NuxtLink>
+          <NuxtLink to="/" class="underline"
             >Natulige olier & kosmetriske råvare</NuxtLink
           >
-          <NuxtLink to="rondeller-og-vatpinde" class="underline"
-            >Rondeller og vatpinde</NuxtLink
-          >
-          <NuxtLink to="tilbehor" class="underline">Tilbehør</NuxtLink>
+          <NuxtLink to="/" class="underline">Rondeller og vatpinde</NuxtLink>
+          <NuxtLink to="/" class="underline">Tilbehør</NuxtLink>
         </div>
       </div>
       <div class="sub-menu">
-        <NuxtLink to="fodevare" class="underline">Fødevare</NuxtLink>
+        <NuxtLink to="/" class="underline">Fødevare</NuxtLink>
         <div class="sub-menu-content">
-          <NuxtLink to="kropspleje" class="underline">Kropspleje</NuxtLink>
-          <NuxtLink to="kosmetik" class="underline">Kosmetik</NuxtLink>
-          <NuxtLink to="har" class="underline">Hår</NuxtLink>
-          <NuxtLink to="hygiejne" class="underline">Hygiejne</NuxtLink>
-          <NuxtLink to="tandpleje" class="underline">Tandpleje</NuxtLink>
-          <NuxtLink to="bad-og-saebe" class="underline">Bad og sæbe</NuxtLink>
-          <NuxtLink to="mor-og-barn" class="underline">Mor & barn</NuxtLink>
-          <NuxtLink to="naturlige-olier" class="underline"
+          <NuxtLink to="/" class="underline">Kropspleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Kosmetik</NuxtLink>
+          <NuxtLink to="/" class="underline">Hår</NuxtLink>
+          <NuxtLink to="/" class="underline">Hygiejne</NuxtLink>
+          <NuxtLink to="/" class="underline">Tandpleje</NuxtLink>
+          <NuxtLink to="/" class="underline">Bad og sæbe</NuxtLink>
+          <NuxtLink to="/" class="underline">Mor & barn</NuxtLink>
+          <NuxtLink to="/" class="underline"
             >Natulige olier & kosmetriske råvare</NuxtLink
           >
-          <NuxtLink to="rondeller-og-vatpinde" class="underline"
-            >Rondeller og vatpinde</NuxtLink
-          >
-          <NuxtLink to="tilbehor" class="underline">Tilbehør</NuxtLink>
+          <NuxtLink to="/" class="underline">Rondeller og vatpinde</NuxtLink>
+          <NuxtLink to="/" class="underline">Tilbehør</NuxtLink>
         </div>
       </div>
       |
       <div class="sub-menu">
-        <NuxtLink to="blog" class="underline">Blog</NuxtLink>
+        <NuxtLink to="/" class="underline">Blog</NuxtLink>
       </div>
       <div class="sub-menu">
-        <NuxtLink to="om-tinc" class="underline">Om TINC</NuxtLink>
+        <NuxtLink to="/" class="underline">Om TINC</NuxtLink>
       </div>
     </div>
     <div class="user-links">
-      <NuxtLink to="profile"><img src="/icons/user.svg" alt="" /></NuxtLink>
-      <NuxtLink to="profile/wishlist"
-        ><img src="/icons/heart.svg" alt=""
-      /></NuxtLink>
-      <NuxtLink to="cart"><img src="/icons/basket.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/"><img src="/icons/user.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/"><img src="/icons/heart.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/"><img src="/icons/basket.svg" alt="" /></NuxtLink>
     </div>
   </nav>
 </template>
