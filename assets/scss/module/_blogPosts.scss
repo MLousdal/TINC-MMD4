@@ -1,0 +1,26 @@
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-6);
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0px;
+  gap: var(--size-3);
+
+  &[href] {
+    color: var(--text-2);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.03);
+    }
+  }
+
+  img {
+    aspect-ratio: 1;
+  }
+}

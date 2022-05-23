@@ -1,15 +1,15 @@
 <script setup>
 defineProps({
+  img: { type: String, default: "se mere" },
+  link: { type: String, required: true },
   name: { type: String, required: true },
   price: { type: String, required: true },
-  link: { type: String, required: true },
-  img: { type: String, default: "se mere" },
 });
 </script>
 
 <template>
   <NuxtLink :to="`${link}`" class="product">
-    <img :src="`${img}`" :alt="`name`" />
+    <img :src="`${img}`" :alt="name" />
     <input type="image" src="/icons/heart.svg" class="favoriteBtn" />
     <div class="product-text">
       <p>{{ name }}</p>

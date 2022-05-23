@@ -78,6 +78,29 @@ const categories = [
     img: "/images/ella-olsson.jpg",
   },
 ];
+const blogPosts = [
+  {
+    author: "Amalie A.",
+    date: "02/04/22",
+    img: "/images/diana-light.jpg",
+    link: "/blogPost",
+    title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
+  },
+  {
+    author: "Amalie A.",
+    date: "02/04/22",
+    img: "/images/ella-olsson.jpg",
+    link: "/blogPost",
+    title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
+  },
+  {
+    author: "Amalie A.",
+    date: "02/04/22",
+    img: "/images/anh-nguyen.jpg",
+    link: "/blogPost",
+    title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
+  },
+];
 </script>
 
 <template>
@@ -100,6 +123,20 @@ const categories = [
       <SectionHeader title="Kategorier" noLink></SectionHeader>
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
+    <section>
+      <SectionHeader title="Blog indlæg" link="/blog"></SectionHeader>
+      <div class="blog-posts">
+        <BlogPost
+          v-for="blogPost in blogPosts"
+          :author="blogPost.author"
+          :date="blogPost.date"
+          :img="blogPost.img"
+          :link="blogPost.link"
+          :title="blogPost.title"
+        ></BlogPost>
+      </div>
+    </section>
+
     <section>
       <SectionHeader
         title="Om TINC"

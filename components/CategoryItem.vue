@@ -1,14 +1,14 @@
 <script setup>
 defineProps({
-  name: { type: String, required: true },
-  link: { type: String, required: true },
   img: { type: String, default: "se mere" },
+  link: { type: String, required: true },
+  name: { type: String, required: true },
 });
 </script>
 
 <template>
   <NuxtLink :to="`${link}`" class="category-item">
-    <img :src="`${img}`" :alt="`name`" />
+    <img :src="`${img}`" :alt="name" />
     <p>{{ name }}</p>
   </NuxtLink>
 </template>
