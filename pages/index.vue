@@ -110,11 +110,11 @@ const blogPosts = [
       <p>
         This is the index page which should be displayed as the first page...
       </p>
+      <nav class="flex flex-gap-2">
+        <NuxtLink to="/">Home page</NuxtLink>
+        <NuxtLink to="/openprops">Open Props page</NuxtLink>
+      </nav>
     </header>
-    <nav class="flex flex-gap-2">
-      <NuxtLink to="/">Home page</NuxtLink>
-      <NuxtLink to="/openprops">Open Props page</NuxtLink>
-    </nav>
     <section>
       <SectionHeader title="Nyheder" link="/"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
