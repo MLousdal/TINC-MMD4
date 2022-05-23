@@ -31,6 +31,53 @@ const products = [
     img: "/images/product.png",
   },
 ];
+const categories = [
+  {
+    name: "Fødevare",
+    link: "/product",
+    img: "/images/anh-nguyen.jpg",
+  },
+  {
+    name: "Kropspleje",
+    link: "/product",
+    img: "/images/neauthy-skincare.jpg",
+  },
+  {
+    name: "Madopbevaring og servering",
+    link: "/product",
+    img: "/images/ella-olsson.jpg",
+  },
+  {
+    name: "Fødevare",
+    link: "/product",
+    img: "/images/anh-nguyen.jpg",
+  },
+  {
+    name: "Kropspleje",
+    link: "/product",
+    img: "/images/neauthy-skincare.jpg",
+  },
+  {
+    name: "Madopbevaring og servering",
+    link: "/product",
+    img: "/images/ella-olsson.jpg",
+  },
+  {
+    name: "Fødevare",
+    link: "/product",
+    img: "/images/anh-nguyen.jpg",
+  },
+  {
+    name: "Kropspleje",
+    link: "/product",
+    img: "/images/neauthy-skincare.jpg",
+  },
+  {
+    name: "Madopbevaring og servering",
+    link: "/product",
+    img: "/images/ella-olsson.jpg",
+  },
+];
 </script>
 
 <template>
@@ -48,6 +95,10 @@ const products = [
     <section>
       <SectionHeader title="Nyheder" link="/"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
+    </section>
+    <section>
+      <SectionHeader title="Kategorier" noLink></SectionHeader>
+      <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
       <SectionHeader

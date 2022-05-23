@@ -1,12 +1,9 @@
 .product {
-  flex: 1 1 350px;
-  width: 100%;
-  max-width: 350px;
   display: flex;
   flex-direction: column;
+  flex: 1 0 var(--size-14);
   gap: var(--size-2);
   position: relative;
-  padding: var(--size-3);
 
   &[href] {
     color: var(--text-2);
@@ -23,6 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-3);
+
+  > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 .addToCartBtn,
@@ -32,8 +36,6 @@
 }
 
 .favoriteBtn {
-  // width: var(--size-4);
-  // height: var(--size-4);
   position: absolute;
   top: var(--size-4);
   right: var(--size-4);

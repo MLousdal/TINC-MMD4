@@ -5,7 +5,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-width: none; /* Firefox */
-  width: fit-content;
+  width: 100%;
+  padding: var(--size-3);
 
   &::-webkit-scrollbar {
     // display: none;

@@ -2,6 +2,7 @@
 defineProps({
   title: { type: String, required: true },
   link: { type: String, required: true },
+  noLink: { type: Boolean, default: false },
   more: { type: String, default: "se mere" },
 });
 </script>
@@ -9,8 +10,9 @@ defineProps({
 <template>
   <header class="section-header">
     <h2>{{ title }}</h2>
-    <NuxtLink :to="`${link}`" class="se-mere"
+    <NuxtLink :to="`${link}`" class="se-mere" v-if="!noLink"
       >{{ more }}<img src="/icons/arrow.svg" alt=""
     /></NuxtLink>
+    <NuxtLink :to="`${link}`" class="se-mere" v-else></NuxtLink>
   </header>
 </template>

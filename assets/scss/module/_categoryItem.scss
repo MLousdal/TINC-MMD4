@@ -1,0 +1,22 @@
+.category-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-5);
+  flex: 1 0 var(--size-12);
+  align-items: center;
+  text-align: center;
+
+  &[href] {
+    color: var(--text-2);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.03);
+    }
+  }
+
+  img {
+    aspect-ratio: 1;
+  }
+}
