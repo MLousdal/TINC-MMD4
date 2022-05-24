@@ -15,6 +15,7 @@ defineProps({
         perPage: 1,
         perMove: 1,
         pagination: false,
+        pauseOnHover: true,
       }"
       aria-label="My Favorite Images"
     >

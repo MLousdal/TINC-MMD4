@@ -1,7 +1,10 @@
 .blog-posts {
   display: flex;
   justify-content: space-between;
-  gap: var(--size-6);
+  gap: var(--size-8);
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+  }
 }
 
 .blog-post {
@@ -22,6 +25,7 @@
 
   img {
     aspect-ratio: 1;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }

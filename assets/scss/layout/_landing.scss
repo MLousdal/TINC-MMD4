@@ -8,4 +8,8 @@
   article {
     flex: 1 0 1px;
   }
+  @media screen and (max-width: 950px) {
+    columns: 1;
+    flex-direction: column;
+  }
 }

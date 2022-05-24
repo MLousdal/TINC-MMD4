@@ -1,7 +1,6 @@
 .testimonial {
   display: flex;
   gap: var(--size-6);
-  // width: 100%;
   max-width: 40ch;
   margin: 0 auto;
 
@@ -41,19 +40,5 @@
 
   .star {
     height: var(--size-4);
-  }
-}
-
-.splide {
-  &__slide {
-    max-inline-size: none !important;
-  }
-
-  &__arrow {
-    background: var(--surface-3) !important;
-
-    &:hover:not(:disabled) {
-      background-color: var(--contrast) !important;
-    }
   }
 }
