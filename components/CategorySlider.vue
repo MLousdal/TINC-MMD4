@@ -1,4 +1,6 @@
 <script setup>
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+
 defineProps({
   categories: { type: Array, required: true },
 });
