@@ -1,3 +1,75 @@
+.hero {
+  &-blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  &-banner {
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+  }
+
+  h1 {
+    text-align: end;
+    position: absolute;
+    right: var(--size-10);
+    top: var(--size-12);
+  }
+
+  &-img- {
+    &1 {
+      aspect-ratio: 100 / 113;
+      width: 100%;
+      max-width: 45%;
+    }
+
+    &2 {
+      aspect-ratio: 149 / 105;
+      width: 100%;
+      max-width: 65%;
+      position: absolute;
+      left: 35%;
+      top: 40%;
+    }
+  }
+
+  &-btn {
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding-block: var(--size-3);
+    padding-inline: var(--size-5);
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    cursor: pointer;
+    color: var(--text-1) !important;
+  }
+
+  &-info {
+    display: grid;
+    grid-template-columns: repeat(3, var(--size-14));
+    gap: var(--size-11);
+    margin: 0 auto;
+
+    div {
+      width: fit-content;
+    }
+    @media screen and (max-width: 800px) {
+      :nth-child(3) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+}
+
 .om-tinc {
   display: flex;
   flex-direction: row;

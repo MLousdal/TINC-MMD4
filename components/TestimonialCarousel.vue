@@ -17,7 +17,7 @@ defineProps({
         pagination: false,
         pauseOnHover: true,
       }"
-      aria-label="My Favorite Images"
+      aria-label="Testimonials"
     >
       <SplideSlide v-for="testimonial in testimonials">
         <Testimonial
