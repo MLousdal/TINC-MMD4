@@ -7,6 +7,8 @@
     saturate(1%) hue-rotate(94deg) brightness(102%) contrast(101%);
   --filter-brand: brightness(0) saturate(100%) invert(67%) sepia(11%)
     saturate(469%) hue-rotate(45deg) brightness(92%) contrast(90%);
+  --filter-contrast: brightness(0) saturate(100%) invert(59%) sepia(20%)
+    saturate(1206%) hue-rotate(194deg) brightness(93%) contrast(91%);
 }
 
 .overlay {
@@ -115,6 +117,15 @@
 }
 
 .text- {
+  &serif {
+    font-family: var(--font-serif);
+  }
+  &sans {
+    font-family: var(--font-sans);
+  }
+  &nowrap {
+    white-space: nowrap;
+  }
   &center {
     text-align: center;
   }

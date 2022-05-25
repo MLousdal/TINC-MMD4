@@ -3,31 +3,31 @@ const products = [
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/",
+    link: "/product",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/",
+    link: "/product",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/",
+    link: "/product",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/",
+    link: "/product",
     img: "/images/product.png",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/",
+    link: "/product",
     img: "/images/product.png",
   },
 ];

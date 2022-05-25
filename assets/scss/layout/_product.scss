@@ -1,0 +1,50 @@
+.product-page {
+  display: grid;
+  grid-template-columns: 40% auto;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-5);
+
+    h1 {
+      max-inline-size: none;
+    }
+  }
+
+  main {
+    display: flex;
+    gap: var(--size-5);
+    flex-direction: column;
+  }
+
+  &-list {
+    padding: var(--size-3);
+
+    li {
+      padding-left: var(--size-3);
+
+      &::marker {
+        content: url("/icons/checkmark-dark.svg");
+      }
+    }
+  }
+}
+
+.product-functions {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .favoriteBtn {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  button {
+    padding-inline: var(--size-9);
+    font-style: italic;
+  }
+}
