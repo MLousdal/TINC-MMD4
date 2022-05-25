@@ -18,12 +18,18 @@ defineProps({
         perPage: 6,
         gap: '5rem',
         mediaQuery: 'max',
+        padding: '5%',
         breakpoints: {
           1200: {
             perPage: 5,
           },
           1000: {
             perPage: 4,
+            gap: '3rem',
+          },
+          600: {
+            perPage: 3,
+            gap: '2rem',
           },
         },
       }"
