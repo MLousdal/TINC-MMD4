@@ -170,16 +170,6 @@ const testimonials = [
 
 <template>
   <div>
-    <!-- <header>
-      <h1>LANDING PAGE</h1>
-      <p>
-        This is the index page which should be displayed as the first page...
-      </p>
-      <nav class="flex flex-gap-2">
-        <NuxtLink to="/">Home page</NuxtLink>
-        <NuxtLink to="/openprops">Open Props page</NuxtLink>
-      </nav>
-    </header> -->
     <section class="hero">
       <img src="/icons/heroBlob.svg" alt="" class="hero-blob" />
       <div class="hero-banner">
