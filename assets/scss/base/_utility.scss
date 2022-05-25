@@ -44,6 +44,10 @@
   }
 }
 
+.flip {
+  transform: rotate(180deg);
+}
+
 .hide {
   display: none !important;
 }

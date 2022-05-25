@@ -51,21 +51,26 @@
   }
 
   &-info {
-    display: grid;
-    grid-template-columns: repeat(3, var(--size-14));
-    gap: var(--size-11);
-    margin: 0 auto;
+    display: flex;
+    gap: var(--size-5);
+    justify-content: space-around;
+    align-items: center;
 
     div {
-      width: fit-content;
+      max-width: 50%;
+      flex: 1 1 50%;
     }
     @media screen and (max-width: 800px) {
+      justify-content: space-between;
       :nth-child(3) {
         display: none;
       }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 425px) {
       flex-direction: column;
+      :nth-child(3) {
+        display: flex;
+      }
     }
   }
 }
@@ -79,6 +84,9 @@
 
   article {
     flex: 1 0 1px;
+    display: flex;
+    gap: var(--size-3);
+    flex-direction: column;
   }
   @media screen and (max-width: 950px) {
     columns: 1;

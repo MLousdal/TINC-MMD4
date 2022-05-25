@@ -16,14 +16,14 @@ defineProps({
         autoplay: false,
         pagination: false,
         perPage: 6,
-        gap: '1.5rem',
+        gap: '5rem',
         mediaQuery: 'max',
         breakpoints: {
           1200: {
-            perPage: 4,
+            perPage: 5,
           },
           1000: {
-            perPage: 3,
+            perPage: 4,
           },
         },
       }"
