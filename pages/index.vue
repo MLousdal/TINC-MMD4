@@ -34,47 +34,47 @@ const products = [
 const categories = [
   {
     name: "Fødevare",
-    link: "/",
+    link: "/oversigt",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/",
+    link: "/oversigt",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/",
+    link: "/oversigt",
     img: "/images/ella-olsson.jpg",
   },
   {
     name: "Fødevare",
-    link: "/",
+    link: "/oversigt",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/",
+    link: "/oversigt",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/",
+    link: "/oversigt",
     img: "/images/ella-olsson.jpg",
   },
   {
     name: "Fødevare",
-    link: "/",
+    link: "/oversigt",
     img: "/images/anh-nguyen.jpg",
   },
   {
     name: "Kropspleje",
-    link: "/",
+    link: "/oversigt",
     img: "/images/neauthy-skincare.jpg",
   },
   {
     name: "Madopbevaring og servering",
-    link: "/",
+    link: "/oversigt",
     img: "/images/ella-olsson.jpg",
   },
 ];

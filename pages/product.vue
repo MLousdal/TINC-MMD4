@@ -36,7 +36,7 @@ const product = {
   name: "Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
   price: "1,20",
   link: "/product",
-  img: "/images/denta.jpg",
+  images: ["/images/denta.jpg", "/images/product.png"],
   rating: 2,
   description:
     "Denttabs er 100% naturlige og veganske tandpastatabletter, der både giver dig rene tænder og sparer miljøet for en masse unødig plastikemballage. Denttabs indeholder ikke traditionelt slibemiddel, men derimod cellulose mikrofibre. Fibrene giver en meget nænsom polering af tænderne i stedet for den sædvanlige slibning, men med en fremragende virkning. Med frisk smag af mint.",
@@ -65,16 +65,16 @@ const product = {
 </script>
 
 <template>
-  <div>
+  <div class="product-page-wrapper">
     <Breadcrumbs></Breadcrumbs>
     <section class="product-page">
-      <img src="/images/denta.jpg" alt="" />
+      <ImageCarousel :images="product.images"></ImageCarousel>
       <section>
         <header class="product-page-header">
           <h1>{{ product.name }}</h1>
-          <div class="product-functions">
+          <div class="flex flex-between flex-align-center">
             <p class="text-5 bold text-serif">{{ product.price }}</p>
-            <div class="flex flex-align-center flex-gap-1">
+            <div class="product-functions">
               <input
                 type="image"
                 src="/icons/heart.svg"
