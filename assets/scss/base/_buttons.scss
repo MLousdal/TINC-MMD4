@@ -20,6 +20,17 @@ input[type="reset"] {
     background-color: hsl(231, 89%, 77%);
     box-shadow: var(--shadow-2);
   }
+
+  &.outline {
+    background-color: transparent;
+    border: var(--border-size-1) var(--contrast) solid;
+    color: var(--contrast);
+
+    &:hover {
+      background-color: hsl(231, 89%, 77%);
+      color: var(--text-1);
+    }
+  }
 }
 
 input:disabled {
