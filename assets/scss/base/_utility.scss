@@ -48,6 +48,10 @@
 
 .flip {
   transform: rotate(180deg);
+
+  &-horizon {
+    transform: scaleX(-1);
+  }
 }
 
 .hide {
