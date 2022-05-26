@@ -72,9 +72,9 @@
       </div>
     </div>
     <div class="user-links">
-      <NuxtLink to="/oversigt"><img src="/icons/user.svg" alt="" /></NuxtLink>
-      <NuxtLink to="/oversigt"><img src="/icons/heart.svg" alt="" /></NuxtLink>
-      <NuxtLink to="/oversigt"><img src="/icons/basket.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/profile"><img src="/icons/user.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/wishlist"><img src="/icons/heart.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/cart"><img src="/icons/basket.svg" alt="" /></NuxtLink>
     </div>
   </nav>
 </template>

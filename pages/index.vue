@@ -206,11 +206,11 @@ onBeforeUnmount(() => {
       </div>
     </section>
     <section>
-      <SectionHeader title="Nyheder" link="/"></SectionHeader>
+      <SectionHeader title="Nyheder" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
-      <SectionHeader title="Kategorier" link="/" noLink></SectionHeader>
+      <SectionHeader title="Kategorier" link="/oversigt" noLink></SectionHeader>
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
@@ -233,7 +233,11 @@ onBeforeUnmount(() => {
       <TestimonialCarousel :testimonials="testimonials"></TestimonialCarousel>
     </section>
     <section>
-      <SectionHeader title="Om TINC" link="/" more="læs mere"></SectionHeader>
+      <SectionHeader
+        title="Om TINC"
+        link="/oversigt"
+        more="læs mere"
+      ></SectionHeader>
       <div class="om-tinc">
         <article>
           <h3>

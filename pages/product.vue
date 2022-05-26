@@ -42,7 +42,7 @@ const product = {
     "Denttabs er 100% naturlige og veganske tandpastatabletter, der både giver dig rene tænder og sparer miljøet for en masse unødig plastikemballage. Denttabs indeholder ikke traditionelt slibemiddel, men derimod cellulose mikrofibre. Fibrene giver en meget nænsom polering af tænderne i stedet for den sædvanlige slibning, men med en fremragende virkning. Med frisk smag af mint.",
   information: [
     {
-      title: "anvendelse",
+      title: "Anvendelse",
       text: "Microcrystalline cellulose, sodium bicarbonate, citric acid, silica, sodium laurel glutamate, magnesium stearate, natural mint aroma of menthol, stevia, xantham gum, eugenol.",
     },
     {
@@ -75,12 +75,7 @@ const product = {
           <div class="flex flex-between flex-align-center">
             <p class="text-5 bold text-serif">{{ product.price }}</p>
             <div class="product-functions">
-              <input
-                type="image"
-                src="/icons/heart.svg"
-                alt=""
-                class="favoriteBtn"
-              />
+              <FavoriteBtn></FavoriteBtn>
               <button>Tilføj til kurv</button>
             </div>
           </div>
@@ -116,11 +111,11 @@ const product = {
       </section>
     </section>
     <section>
-      <SectionHeader title="Relaterede" link="/"></SectionHeader>
+      <SectionHeader title="Relaterede" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
-      <SectionHeader title="Sidst set" link="/"></SectionHeader>
+      <SectionHeader title="Sidst set" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
   </div>

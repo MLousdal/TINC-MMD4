@@ -10,7 +10,7 @@ defineProps({
 <template>
   <NuxtLink :to="`${link}`" class="product">
     <img :src="`${img}`" :alt="name" />
-    <input type="image" src="/icons/heart.svg" class="favoriteBtn" />
+    <FavoriteBtn></FavoriteBtn>
     <div class="product-text">
       <p>{{ name }}</p>
       <div class="flex flex-between flex-align-end">
