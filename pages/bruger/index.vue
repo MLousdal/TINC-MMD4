@@ -8,16 +8,16 @@
     <section class="profile-section">
       <div class="left">
         <nav>
-          <NuxtLink to="/profile"
+          <NuxtLink to="/bruger"
             >Alle ordre <img src="/icons/arrow.svg" alt=""
           /></NuxtLink>
-          <NuxtLink to="/profile"
+          <NuxtLink to="/bruger"
             >Returner vare <img src="/icons/arrow.svg" alt=""
           /></NuxtLink>
-          <NuxtLink to="/profile"
+          <NuxtLink to="/bruger"
             >Dine oplysninger <img src="/icons/arrow.svg" alt=""
           /></NuxtLink>
-          <NuxtLink to="/profile"
+          <NuxtLink to="/bruger"
             >Hjælp og kontakt <img src="/icons/arrow.svg" alt=""
           /></NuxtLink>
         </nav>
@@ -36,7 +36,7 @@
             <img src="/images/product.png" alt="" />
           </div>
           <NuxtLink
-            to="/profile"
+            to="/bruger"
             class="flex flex-gap-2 text-1 flex-align-center text-dark"
             >se flere detaljer
             <img src="/icons/arrow.svg" alt="" class="icon s"
@@ -53,7 +53,7 @@
             <img src="/images/product.png" alt="" />
           </div>
           <NuxtLink
-            to="/wishlist"
+            to="/bruger/onskeliste"
             class="flex flex-gap-2 text-1 flex-align-center text-dark"
             >se hele ønskeliste
             <img src="/icons/arrow.svg" alt="" class="icon s"

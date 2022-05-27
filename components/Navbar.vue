@@ -76,7 +76,9 @@
       <NuxtLink to="/bruger/onskeliste"
         ><img src="/icons/heart.svg" alt=""
       /></NuxtLink>
-      <NuxtLink to="/cart"><img src="/icons/basket.svg" alt="" /></NuxtLink>
+      <NuxtLink to="/bruger/kurv"
+        ><img src="/icons/basket.svg" alt=""
+      /></NuxtLink>
     </div>
   </nav>
 </template>

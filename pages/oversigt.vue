@@ -103,6 +103,7 @@ const state = reactive({ desktop: true });
       </div>
       <ProductGrid :products="products"></ProductGrid>
     </section>
+    <hr />
     <section>
       <SectionHeader title="Sidst set" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>

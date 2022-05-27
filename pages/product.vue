@@ -110,10 +110,12 @@ const product = {
         </main>
       </section>
     </section>
+    <hr />
     <section>
       <SectionHeader title="Relaterede" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
+    <hr />
     <section>
       <SectionHeader title="Sidst set" link="/oversigt"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
