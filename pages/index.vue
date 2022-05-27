@@ -106,66 +106,46 @@ const blogPosts = [
 ];
 const testimonials = [
   {
-    date: "02/04/22",
-    // img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
+    date: "23/04/22",
+    img: "/images/irene-strong.jpg",
+    name: "Jerry Motylinski",
+    rating: 5,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+      "Meget interessant butik for krævende økologisk orienteret kunder. Anbefales!",
     verified: true,
   },
   {
-    date: "02/04/22",
-    img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
+    date: "05/10/21",
+    name: "Malene Bech",
     rating: 4,
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+    review: "Meget tæt butik men er flot udnyttet.",
     verified: true,
   },
   {
-    date: "02/04/22",
-    // img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
+    date: "03/10/21",
+    img: "/images/womanA.jpg",
+    name: "Anne K. G. Farcuh",
+    rating: 5,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+      "Var der på en søndag, en relativ ung medarbejder ekspederede mig. Hun var meget behjælpelig og kunne svare på alle mine spørgsmål omkring produkterne, meget hjælpsom og flink. Kan kun anbefale butikken 😊",
     verified: true,
   },
   {
-    date: "02/04/22",
-    img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
+    date: "23/09/21",
+    img: "/images/jonathan-borba.jpg",
+    name: "Rikke Gleerup Lerche",
+    rating: 5,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+      "Virkelig fin og dejlig butik med mulighed for specialiteter som tager hensyn til miljøet. Der er virkelig mange lækre sæber, olier, make-up, duftolier Sæbebær, opvasketing m.m. Priserne er rimelige Ekspedienten var meget imødekommende smilende og rar.😃 En dejlig oplevelse, kan varmt anbefales ⭐⭐⭐⭐⭐",
     verified: true,
   },
   {
-    date: "02/04/22",
-    // img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
+    date: "11/07/21",
+    img: "/images/edward-cisneros.jpg",
+    name: "Lone Bang",
+    rating: 5,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
-    verified: true,
-  },
-  {
-    date: "02/04/22",
-    img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
-    verified: true,
-  },
-  {
-    date: "02/04/22",
-    // img: "/images/diana-light.jpg",
-    name: "Eleanor Pena",
-    rating: 4,
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nibh nisl vivamus luctus sed sodales. Amet fermentum in id facilisis mauris id praesent. ",
+      "Super skønt specialorretning. Med fantastisk behagelig service. Kan varmt anbefales",
     verified: true,
   },
 ];
