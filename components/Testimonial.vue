@@ -11,12 +11,10 @@ defineProps({
 
 <template>
   <article class="testimonial">
-    <img
-      :src="`${img}`"
-      :alt="name"
-      class="testimonial-img"
-      :class="{ verified: verified }"
-    />
+    <div class="testimonial-img">
+      <img :src="`${img}`" :alt="name" />
+      <div class="verified" v-if="verified" />
+    </div>
     <div class="testimonial-content">
       <Stars :rating="rating"></Stars>
       <p class="bold">{{ name }}</p>

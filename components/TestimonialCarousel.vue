@@ -11,7 +11,7 @@ defineProps({
     <Splide
       :options="{
         rewind: true,
-        autoplay: true,
+        autoplay: false,
         perPage: 1,
         perMove: 1,
         pagination: false,
