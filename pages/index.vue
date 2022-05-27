@@ -197,6 +197,10 @@ onBeforeUnmount(() => {
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
+      <SectionHeader title="Populært" link="/oversigt"></SectionHeader>
+      <ProductSlider :products="products"></ProductSlider>
+    </section>
+    <section>
       <SectionHeader title="Blog indlæg" link="/"></SectionHeader>
       <div class="blog-posts">
         <BlogPost
