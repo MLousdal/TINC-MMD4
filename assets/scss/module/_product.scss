@@ -23,6 +23,26 @@
     }
   }
 
+  &-tag {
+    position: absolute;
+    top: var(--size-2);
+    left: var(--size-2);
+    padding: var(--size-1) var(--size-3);
+    border-radius: var(--radius-round);
+    color: var(--text-1);
+
+    &.Nedsat {
+      background-color: var(--brand);
+    }
+    &.Udsolgt {
+      background-color: var(--system-red);
+    }
+    &.Nyhed {
+      background-color: var(--secondary);
+      color: var(--text-2);
+    }
+  }
+
   &-text {
     display: flex;
     flex-direction: column;
@@ -108,15 +128,15 @@
   padding: var(--size-2);
   background-color: var(--surface-1);
   position: absolute;
-  right: var(--size-4);
+  right: var(--size-2);
 }
 
 .addToCartBtn {
-  bottom: var(--size-4);
+  bottom: var(--size-2);
 }
 
 .favoriteBtn {
-  top: var(--size-4);
+  top: var(--size-2);
 }
 
 .removeFromCartBtn {

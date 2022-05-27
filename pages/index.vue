@@ -5,18 +5,21 @@ const products = [
     price: "39,00",
     link: "/product",
     img: "/images/product.png",
+    tag: "Nedsat",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
     link: "/product",
     img: "/images/product.png",
+    tag: "Udsolgt",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
     link: "/product",
     img: "/images/product.png",
+    tag: "Nyhed",
   },
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",

@@ -38,6 +38,7 @@ function changeImage(img) {
           alt=""
           class="product-page-image-input"
           @click="changeImage(image)"
+          @mouseenter="changeImage(image)"
         />
       </SplideSlide>
     </Splide>

@@ -7,6 +7,7 @@ defineProps({
   amount: { type: Number },
   type: { type: String, default: "default" },
   gift: { type: Boolean, default: false },
+  tag: { type: String },
 });
 </script>
 
@@ -15,6 +16,7 @@ defineProps({
     <NuxtLink :to="link" class="product-img-link">
       <img :src="img" :alt="name" />
     </NuxtLink>
+    <div v-if="tag" class="product-tag" :class="tag">{{ tag }}</div>
     <FavoriteBtn></FavoriteBtn>
     <NuxtLink :to="link" class="product-text">
       <p>{{ name }}</p>
