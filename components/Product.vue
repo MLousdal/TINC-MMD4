@@ -12,7 +12,7 @@ defineProps({
 
 <template>
   <div class="product" v-if="type == 'default'">
-    <NuxtLink :to="link">
+    <NuxtLink :to="link" class="product-img-link">
       <img :src="img" :alt="name" />
     </NuxtLink>
     <FavoriteBtn></FavoriteBtn>
@@ -24,7 +24,7 @@ defineProps({
   </div>
 
   <div class="product-cart" v-if="type == 'cart'">
-    <NuxtLink :to="link">
+    <NuxtLink :to="link" class="product-img-link">
       <img :src="img" :alt="name" />
     </NuxtLink>
     <input type="image" src="/icons/close.svg" class="removeFromCartBtn" />
