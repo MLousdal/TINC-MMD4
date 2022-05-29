@@ -22,205 +22,205 @@ const Links = [
           },
           {
             title: "Bodyscrub",
-            to: "/oversigt",
+            to: "/Personlig pleje/Bad og sæbe/Bodyscrub",
           },
           {
             title: "Håndsæbe",
-            to: "/oversigt",
+            to: "/Personlig pleje/Bad og sæbe/Håndsæbe",
           },
           {
             title: "Sæber og sæbeskåle",
-            to: "/oversigt",
+            to: "/Personlig pleje/Bad og sæbe/Sæber og sæbeskåle",
           },
         ],
       },
       {
         title: "Hygiejne",
-        to: "/oversigt",
+        to: "/Personlig pleje/Hygiejne/",
         subSubMenus: [
           {
             title: "Babering",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hygiejne/Babering",
           },
           {
             title: "Deodorant",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hygiejne/Deodorant",
           },
           {
             title: "Intimhygiejne",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hygiejne/Intimhygiejne",
           },
           {
             title: "Lommetørklæder",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hygiejne/Lommetørklæder",
           },
           {
             title: "Plaster",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hygiejne/Plaster",
           },
         ],
       },
       {
         title: "Hår",
-        to: "/oversigt",
+        to: "/Personlig pleje/Hår/",
         subSubMenus: [
           {
             title: "Hårbørster, Kamme & Sakse",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hår/Hårbørster, Kamme & Sakse",
           },
           {
             title: "Hårfarve",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hår/Hårfarve",
           },
           {
             title: "Hårserum, Kur & Massage",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hår/Hårserum, Kur & Massage",
           },
           {
             title: "Hårpynt",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hår/Hårpynt",
           },
           {
-            title: "Shampoo/Balsam bar",
-            to: "/oversigt",
+            title: "Shampoo - Balsam bar",
+            to: "/Personlig pleje/Hår/Shampoo - Balsam bar",
           },
           {
-            title: "Shampoo/Balsam flydende",
-            to: "/oversigt",
+            title: "Shampoo - Balsam flydende",
+            to: "/Personlig pleje/Hår/Shampoo - Balsam flydende",
           },
           {
             title: "Styling & Tørshampoo",
-            to: "/oversigt",
+            to: "/Personlig pleje/Hår/Styling & Tørshampoo",
           },
         ],
       },
       {
         title: "Kosmetik",
-        to: "/oversigt",
+        to: "/Personlig pleje/Kosmetik/",
         subSubMenus: [
           {
             title: "Ansigt",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Ansigt",
           },
           {
             title: "Eau de Toilette",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Eau de Toilette",
           },
           {
             title: "Læber",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Læber",
           },
           {
             title: "Makeup børster & tilbehør",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Makeup børster & tilbehør",
           },
           {
             title: "Neglelak & negletilbehør",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Neglelak & negletilbehør",
           },
           {
             title: "Øjne",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kosmetik/Øjne",
           },
         ],
       },
       {
         title: "Kropspleje",
-        to: "/oversigt",
+        to: "/Personlig pleje/Kropspleje/",
         subSubMenus: [
           {
             title: "Ansigtscreme",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Ansigtscreme",
           },
           {
             title: "Bodylotion",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Bodylotion",
           },
           {
             title: "Fodpleje",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Fodpleje",
           },
           {
             title: "Håndpleje",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Håndpleje",
           },
           {
             title: "Læbepomade",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Læbepomade",
           },
           {
             title: "Massage",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Massage",
           },
           {
             title: "Rens & tilbehør",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Rens & tilbehør",
           },
           {
             title: "Solcreme & aftersun",
-            to: "/oversigt",
+            to: "/Personlig pleje/Kropspleje/Solcreme & aftersun",
           },
         ],
       },
       {
         title: "Mor og barn",
-        to: "/oversigt",
+        to: "/Personlig pleje/Mor og barn/",
         subSubMenus: [
           {
             title: "Baby",
-            to: "/oversigt",
+            to: "/Personlig pleje/Mor og barn/Baby",
           },
         ],
       },
       {
         title: "Tandpleje",
-        to: "/oversigt",
+        to: "/Personlig pleje/Tandpleje/",
         subSubMenus: [
           {
             title: "Tandpleje",
-            to: "/oversigt",
+            to: "/Personlig pleje/Tandpleje/Tandpleje",
           },
         ],
       },
       {
         title: "Natulige olier & kosmetriske råvare",
-        to: "/oversigt",
+        to: "/Personlig pleje/Natulige olier & kosmetriske råvare/",
         subSubMenus: [
           {
             title: "Naturlig duft",
-            to: "/oversigt",
+            to: "/Personlig pleje/Natulige olier & kosmetriske råvare/Naturlig duft",
           },
           {
             title: "Naturlig olie",
-            to: "/oversigt",
+            to: "/Personlig pleje/Natulige olier & kosmetriske råvare/Naturlig olie",
           },
           {
-            title: "Naturlig duft",
-            to: "/oversigt",
+            title: "Kosmetiske råvarer",
+            to: "/Personlig pleje/Natulige olier & kosmetriske råvare/Kosmetiske råvarer",
           },
         ],
       },
       {
         title: "Rondeller og vatpinde",
-        to: "/oversigt",
+        to: "/Personlig pleje/Rondeller og vatpinde/",
         subSubMenus: [
           {
-            title: "Vatpinde/ørerensere",
-            to: "/oversigt",
+            title: "Vatpinde og ørerensere",
+            to: "/Personlig pleje/Rondeller og vatpinde/Vatpinde og ørerensere",
           },
         ],
       },
       {
         title: "Tilbehør",
-        to: "/oversigt",
+        to: "/Personlig pleje/Tilbehør/",
         subSubMenus: [
           {
             title: "Toilettasker",
-            to: "/oversigt",
+            to: "/Personlig pleje/Tilbehør/Toilettasker",
           },
           {
             title: "Varmepude",
-            to: "/oversigt",
+            to: "/Personlig pleje/Tilbehør/Varmepude",
           },
         ],
       },
@@ -228,95 +228,95 @@ const Links = [
   },
   {
     title: "Husholdning",
-    to: "/oversigt",
+    to: "/Husholdning/",
     subMenus: [
       {
         title: "Boligtilbehør",
-        to: "/oversigt",
+        to: "/Husholdning/Boligtilbehør/",
         subSubMenus: [
           {
             title: "Duft, røgelse & lys",
-            to: "/oversigt",
+            to: "/Husholdning/Boligtilbehør/Duft, røgelse & lys",
           },
           {
             title: "Glasflasker & beholder",
-            to: "/oversigt",
+            to: "/Husholdning/Boligtilbehør/Glasflasker & beholder",
           },
           {
             title: "Indpakning, poser & pynt",
-            to: "/oversigt",
+            to: "/Husholdning/Boligtilbehør/Indpakning, poser & pynt",
           },
         ],
       },
       {
         title: "Køkkenartikler",
-        to: "/oversigt",
+        to: "/Husholdning/Køkkenartikler/",
         subSubMenus: [
           {
             title: "Køkkentilbehør",
-            to: "/oversigt",
+            to: "/Husholdning/Køkkenartikler/Køkkentilbehør",
           },
           {
             title: "Sugerør",
-            to: "/oversigt",
+            to: "/Husholdning/Køkkenartikler/Sugerør",
           },
         ],
       },
       {
         title: "Madopbevaring",
-        to: "/oversigt",
+        to: "/Husholdning/Madopbevaring/",
         subSubMenus: [
           {
             title: "Drikkeflasker",
-            to: "/oversigt",
+            to: "/Husholdning/Madopbevaring/Drikkeflasker",
           },
           {
             title: "Madkasser",
-            to: "/oversigt",
+            to: "/Husholdning/Madopbevaring/Madkasser",
           },
         ],
       },
       {
         title: "Rengøring(sartikler)",
-        to: "/oversigt",
+        to: "/Husholdning/Rengøring(sartikler)/",
         subSubMenus: [
           {
             title: "Børste & svampe",
-            to: "/oversigt",
+            to: "/Husholdning/Rengøring(sartikler)/Børste & svampe",
           },
           {
             title: "Koste & fejebakker",
-            to: "/oversigt",
+            to: "/Husholdning/Rengøring(sartikler)/Koste & fejebakker",
           },
           {
             title: "Opvask",
-            to: "/oversigt",
+            to: "/Husholdning/Rengøring(sartikler)/Opvask",
           },
           {
             title: "Rengøringsmidler",
-            to: "/oversigt",
+            to: "/Husholdning/Rengøring(sartikler)/Rengøringsmidler",
           },
           {
             title: "Tøjvask",
-            to: "/oversigt",
+            to: "/Husholdning/Rengøring(sartikler)/Tøjvask",
           },
         ],
       },
       {
         title: "Tekstiler",
-        to: "/oversigt",
+        to: "/Husholdning/Tekstiler/",
         subSubMenus: [
           {
             title: "Håndklæder",
-            to: "/oversigt",
+            to: "/Husholdning/Tekstiler/Håndklæder",
           },
           {
             title: "Klude",
-            to: "/oversigt",
+            to: "/Husholdning/Tekstiler/Klude",
           },
           {
             title: "Viskestykker",
-            to: "/oversigt",
+            to: "/Husholdning/Tekstiler/Viskestykker",
           },
         ],
       },
@@ -324,45 +324,45 @@ const Links = [
   },
   {
     title: "Fødevare",
-    to: "/oversigt",
+    to: "/Fødevare/",
     subMenus: [
       {
-        title: "Mad / kolonial",
-        to: "/oversigt",
+        title: "Mad og kolonial",
+        to: "/Fødevare/Mad og kolonial/",
         subSubMenus: [
           {
             title: "Kolonial",
-            to: "/oversigt",
+            to: "/Fødevare/Mad og kolonial/Kolonial",
           },
           {
             title: "Konfekture",
-            to: "/oversigt",
+            to: "/Fødevare/Mad og kolonial/Konfekture",
           },
           {
             title: "Krydderier, Urter, Blomster & Pulver",
-            to: "/oversigt",
+            to: "/Fødevare/Mad og kolonial/Krydderier, Urter, Blomster & Pulver",
           },
           {
             title: "Slik",
-            to: "/oversigt",
+            to: "/Fødevare/Mad og kolonial/Slik",
           },
           {
             title: "Tyggeegummi",
-            to: "/oversigt",
+            to: "/Fødevare/Mad og kolonial/Tyggeegummi",
           },
         ],
       },
       {
         title: "Drikkevare",
-        to: "/oversigt",
+        to: "/Fødevare/Drikkevare/",
         subSubMenus: [
           {
             title: "Drikkevarer",
-            to: "/oversigt",
+            to: "/Fødevare/Drikkevare/Drikkevarer",
           },
           {
             title: "Kaffe & te",
-            to: "/oversigt",
+            to: "/Fødevare/Drikkevare/Kaffe & te",
           },
         ],
       },
@@ -386,9 +386,9 @@ const Links = [
               <div class="sub-sub-menu-content-filter">
                 <p class="text-gray">Shop {{ subMenu.title }}</p>
                 <div class="flex flex-column flex-gap-2">
-                  <NuxtLink to="/oversigt">Nyheder</NuxtLink>
-                  <NuxtLink to="/oversigt">Tilbud</NuxtLink>
-                  <NuxtLink to="/oversigt">Gaveideer</NuxtLink>
+                  <NuxtLink :to="subMenu.to">Nyheder</NuxtLink>
+                  <NuxtLink :to="subMenu.to">Tilbud</NuxtLink>
+                  <NuxtLink :to="subMenu.to">Gaveideer</NuxtLink>
                 </div>
               </div>
               <div class="sub-sub-menu-content-categories">
@@ -414,10 +414,10 @@ const Links = [
       </div>
       |
       <div class="sub-menu">
-        <NuxtLink to="/oversigt" class="underline">Blog</NuxtLink>
+        <NuxtLink to="/" class="underline">Blog</NuxtLink>
       </div>
       <div class="sub-menu">
-        <NuxtLink to="/oversigt" class="underline">Om TINC</NuxtLink>
+        <NuxtLink to="/" class="underline">Om TINC</NuxtLink>
       </div>
     </div>
     <div class="user-links">
