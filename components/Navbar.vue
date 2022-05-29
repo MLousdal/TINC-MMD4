@@ -10,14 +10,50 @@ const blogPost = {
 defineProps({
   links: { type: Array, required: true },
 });
+
+const state = reactive({ isDesktop: true, mobileNavOpen: false });
+
+function updateIsDesktop() {
+  const mediaQuery = window.matchMedia("(max-width: 1210px)");
+
+  if (mediaQuery.matches) {
+    state.isDesktop = false;
+  } else {
+    state.isDesktop = true;
+  }
+}
+
+onMounted(() => {
+  window.addEventListener("resize", updateIsDesktop);
+  updateIsDesktop();
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateIsDesktop);
+});
+
+function toggleMobileNav() {
+  if (state.isDesktop) {
+    console.log("isDesktop:", state.isDesktop);
+    return;
+  }
+  state.mobileNavOpen = !state.mobileNavOpen;
+  console.log("mobileNavOpen:", state.mobileNavOpen);
+}
 </script>
 
 <template>
   <nav class="navbar">
-    <NuxtLink to="/" aria-label="Hjem">
+    <input id="navbar_checkbox" v-model="state.mobileNavOpen" type="checkbox" />
+    <label for="navbar_checkbox" class="navBtn" v-show="!state.isDesktop">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <NuxtLink to="/" aria-label="Hjem" class="logo">
       <img src="/logo.svg" alt="" />
     </NuxtLink>
-    <div class="nav-links">
+    <div class="nav-links" v-show="state.isDesktop">
       <div class="sub-menu" v-for="link in links">
         <NuxtLink :to="link.to" class="underline">{{ link.title }}</NuxtLink>
         <div class="sub-menu-content">
@@ -61,14 +97,18 @@ defineProps({
         <NuxtLink to="/" class="underline">Om TINC</NuxtLink>
       </div>
     </div>
+    <div class="mobile-nav-links" v-show="state.mobileNavOpen"></div>
     <div class="user-links">
-      <NuxtLink to="/bruger" aria-label="Bruger"
+      <NuxtLink to="/bruger" aria-label="Bruger" class="user-links-icon"
         ><img src="/icons/user.svg"
       /></NuxtLink>
-      <NuxtLink to="/bruger/onskeliste" aria-label="Ønskeliste"
+      <NuxtLink
+        to="/bruger/onskeliste"
+        aria-label="Ønskeliste"
+        class="user-links-icon"
         ><img src="/icons/heart.svg"
       /></NuxtLink>
-      <NuxtLink to="/bruger/kurv" aria-label="Kurv"
+      <NuxtLink to="/bruger/kurv" aria-label="Kurv" class="user-links-icon"
         ><img src="/icons/basket.svg"
       /></NuxtLink>
     </div>

@@ -11,6 +11,20 @@
   top: 0;
   width: 100%;
   z-index: 5;
+
+  @media (max-width: 1210px) {
+    padding-block: var(--size-2);
+    gap: var(--size-5);
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  height: var(--size-7);
+
+  img {
+    height: 100%;
+  }
 }
 
 .nav-links {
@@ -37,6 +51,11 @@
   display: flex;
   gap: var(--size-3);
   margin-left: auto;
+
+  @media (max-width: 1210px) {
+    gap: var(--size-5);
+    margin-left: 0;
+  }
 }
 
 .sub-menu {
@@ -131,4 +150,17 @@
   .blog-post {
     white-space: normal !important;
   }
+}
+
+.navBtn {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
+}
+
+.mobile-nav-links {
+  position: absolute;
+  top: 0;
+  left: -100%;
 }

@@ -189,15 +189,19 @@ onBeforeUnmount(() => {
       </div>
     </section>
     <section>
-      <SectionHeader title="Nyheder" link="/oversigt"></SectionHeader>
+      <SectionHeader title="Nyheder" link="/Alle-produkter"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
-      <SectionHeader title="Kategorier" link="/oversigt" noLink></SectionHeader>
+      <SectionHeader
+        title="Kategorier"
+        link="/Alle-produkter"
+        noLink
+      ></SectionHeader>
       <CategorySlider :categories="categories"></CategorySlider>
     </section>
     <section>
-      <SectionHeader title="Populært" link="/oversigt"></SectionHeader>
+      <SectionHeader title="Populært" link="/Alle-produkter"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
     <section>
