@@ -17,16 +17,24 @@
     color: var(--text-2);
     transition: transform 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: none;
-      transform: scale(1.03);
+    }
+    &:hover img,
+    &:focus img {
+      transform: scale(1.05);
     }
   }
 
-  img {
-    aspect-ratio: 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  &-img {
+    overflow: hidden;
+    img {
+      aspect-ratio: 1;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.2s ease;
+    }
   }
 }

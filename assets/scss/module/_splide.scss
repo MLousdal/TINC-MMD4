@@ -11,7 +11,8 @@
   &__arrow {
     background: var(--surface-3) !important;
 
-    &:hover:not(:disabled) {
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
       background-color: var(--contrast) !important;
     }
   }

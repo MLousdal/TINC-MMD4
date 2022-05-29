@@ -18,11 +18,11 @@ defineProps({
     </NuxtLink>
     <div v-if="tag" class="product-tag" :class="tag">{{ tag }}</div>
     <FavoriteBtn></FavoriteBtn>
-    <NuxtLink :to="link" class="product-text">
+    <input type="image" src="/icons/addCart.svg" class="addToCartBtn" />
+    <NuxtLink :to="link" class="product-text" tabindex="-1">
       <p>{{ name }}</p>
       <p class="bold">{{ price }} kr.</p>
     </NuxtLink>
-    <input type="image" src="/icons/addCart.svg" class="addToCartBtn" />
   </div>
 
   <div class="product-cart" v-if="type == 'cart'">

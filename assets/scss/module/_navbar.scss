@@ -25,35 +25,11 @@
     height: fit-content;
     white-space: nowrap;
 
-    &:hover {
+    &:hover,
+    &:focus {
       font-weight: 700;
       text-decoration: none;
     }
-  }
-}
-
-.sub-menu {
-  padding-block: var(--size-3);
-  &:hover .sub-menu-content {
-    display: flex;
-  }
-}
-
-.sub-menu-content {
-  background-color: var(--secondary);
-  display: none;
-  font-family: var(--font-sans);
-  gap: var(--size-3);
-  justify-content: center;
-  left: 0%;
-  padding-block: var(--size-3);
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 4;
-
-  &:hover {
-    display: flex;
   }
 }
 
@@ -61,4 +37,98 @@
   display: flex;
   gap: var(--size-3);
   margin-left: auto;
+}
+
+.sub-menu {
+  padding-block: var(--size-3);
+
+  &:hover .sub-menu-content,
+  &:focus .sub-menu-content,
+  a:hover ~ .sub-menu-content,
+  a:focus ~ .sub-menu-content {
+    display: flex;
+  }
+}
+
+.sub-menu-content {
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-2);
+  display: none;
+  font-family: var(--font-sans);
+  // gap: var(--size-3);
+  justify-content: flex-start;
+  left: 0%;
+  padding-left: var(--size-7);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 4;
+
+  &:hover,
+  &:focus {
+    display: flex;
+  }
+}
+
+.sub-sub-menu {
+  padding-block: var(--size-3);
+  padding-right: var(--size-3);
+
+  &:hover .sub-sub-menu-content,
+  &:focus .sub-sub-menu-content,
+  a:hover ~ .sub-sub-menu-content,
+  a:focus ~ .sub-sub-menu-content {
+    max-height: 600px;
+    transition: max-height 0.25s ease-in;
+    display: grid;
+  }
+
+  &:hover > a,
+  &:focus > a {
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.sub-sub-menu-content {
+  background-color: var(--surface-1);
+  box-shadow: var(--shadow-2);
+  display: none;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  gap: var(--size-3);
+  gap: var(--size-5);
+  grid-template-columns: 20% 50% 20%;
+  max-height: 0;
+  justify-content: center;
+  justify-items: stretch;
+  left: 0%;
+  transition: max-height 0.25s ease-in;
+  overflow: hidden;
+  padding-block: var(--size-3);
+  padding-left: var(--size-7);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 4;
+
+  &:hover,
+  &:focus {
+    display: flex;
+  }
+
+  &-filter,
+  &-categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-5);
+  }
+
+  &-filter {
+    border-right: var(--border-size-1) solid var(--gray-5);
+  }
+
+  .blog-post {
+    white-space: normal !important;
+  }
 }

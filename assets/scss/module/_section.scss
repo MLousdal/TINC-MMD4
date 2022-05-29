@@ -19,7 +19,8 @@ section {
     color: var(--text-2);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     font-weight: 700;
     text-decoration: none;
   }

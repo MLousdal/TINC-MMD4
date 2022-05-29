@@ -14,7 +14,8 @@
     width: 100%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     .product-text {
       text-decoration: none;
     }
@@ -82,12 +83,13 @@
       transition: transform 0.2s ease;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       .product-text {
         text-decoration: none;
       }
       img {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
 
@@ -129,10 +131,20 @@
   background-color: var(--surface-1);
   position: absolute;
   right: var(--size-2);
+  width: var(--size-8);
+
+  @media (max-width: 400px) {
+    width: var(--size-6);
+    padding: var(--size-1);
+  }
 }
 
 .addToCartBtn {
-  bottom: var(--size-2);
+  top: var(--size-9);
+
+  @media (max-width: 400px) {
+    top: var(--size-8);
+  }
 }
 
 .favoriteBtn {

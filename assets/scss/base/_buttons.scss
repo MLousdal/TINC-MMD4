@@ -16,7 +16,8 @@ input[type="reset"] {
   padding-inline: var(--size-3);
   transition: box-shadow 0.2s linear, background-color 0.2s linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: hsl(231, 89%, 77%);
     box-shadow: var(--shadow-2);
   }
@@ -26,7 +27,8 @@ input[type="reset"] {
     border: var(--border-size-1) var(--contrast) solid;
     color: var(--contrast);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: hsl(231, 89%, 77%);
       color: var(--text-1);
     }
@@ -38,7 +40,8 @@ input:disabled {
   box-shadow: none;
   cursor: not-allowed;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--gray-6);
     box-shadow: none;
   }
