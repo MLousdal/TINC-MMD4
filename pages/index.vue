@@ -36,48 +36,48 @@ const products = [
 ];
 const categories = [
   {
-    name: "Fødevare",
-    link: "/oversigt",
+    title: "Fødevare",
+    to: "/Fødevare/",
     img: "/images/anh-nguyen.jpg",
   },
   {
-    name: "Kropspleje",
-    link: "/oversigt",
+    title: "Kropspleje",
+    to: "/Personlig pleje/Kropspleje/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
+    title: "Madopbevaring og servering",
+    to: "/Husholdning/Madopbevaring/",
     img: "/images/ella-olsson.jpg",
   },
   {
-    name: "Fødevare",
-    link: "/oversigt",
+    title: "Fødevare",
+    to: "/Fødevare/",
     img: "/images/anh-nguyen.jpg",
   },
   {
-    name: "Kropspleje",
-    link: "/oversigt",
+    title: "Kropspleje",
+    to: "/Personlig pleje/Kropspleje/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
+    title: "Madopbevaring og servering",
+    to: "/Husholdning/Madopbevaring/",
     img: "/images/ella-olsson.jpg",
   },
   {
-    name: "Fødevare",
-    link: "/oversigt",
+    title: "Fødevare",
+    to: "/Fødevare/",
     img: "/images/anh-nguyen.jpg",
   },
   {
-    name: "Kropspleje",
-    link: "/oversigt",
+    title: "Kropspleje",
+    to: "/Personlig pleje/Kropspleje/",
     img: "/images/neauthy-skincare.jpg",
   },
   {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
+    title: "Madopbevaring og servering",
+    to: "/Husholdning/Madopbevaring/",
     img: "/images/ella-olsson.jpg",
   },
 ];
