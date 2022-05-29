@@ -17,8 +17,8 @@ const Links = [
         to: "/Personlig pleje/Bad og sæbe",
         subSubMenus: [
           {
-            title: "Badtilbehør",
-            to: "/Personlig pleje/Bad og sæbe/Badtilbehør",
+            title: "Bad tilbehør",
+            to: "/Personlig pleje/Bad og sæbe/Bad tilbehør",
           },
           {
             title: "Bodyscrub",

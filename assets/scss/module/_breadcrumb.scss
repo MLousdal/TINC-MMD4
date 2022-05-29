@@ -20,5 +20,11 @@
     font-size: var(--font-size-3);
     align-items: center;
     cursor: pointer;
+    width: fit-content;
+  }
+
+  .router-link-exact-active,
+  .disabled {
+    font-weight: var(--font-weight-7);
   }
 }
