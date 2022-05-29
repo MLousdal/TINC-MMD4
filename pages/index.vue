@@ -166,7 +166,7 @@ onBeforeUnmount(() => {
         <h1>Start din rejse mod en grønnere hverdag hos TINC</h1>
         <img src="/images/hero1.jpg" alt="" class="hero-img-1 flip-horizon" />
         <img src="/images/hero2.png" alt="" class="hero-img-2" />
-        <NuxtLink class="btn flex flex-gap-2 hero-btn" to="/oversigt"
+        <NuxtLink class="btn flex flex-gap-2 hero-btn" to="/Alle-produkter"
           ><span class="text-nowrap">Shop bæredygtigt</span>
           <img src="/icons/arrow-small.svg" alt=""
         /></NuxtLink>
