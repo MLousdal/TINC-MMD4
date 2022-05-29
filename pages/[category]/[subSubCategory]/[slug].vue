@@ -33,53 +33,7 @@ const products = [
     img: "/images/product.png",
   },
 ];
-const categories = [
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-];
+
 const tags = ["Tør/moden", "Fedet"];
 
 const state = reactive({ desktop: true });
@@ -89,7 +43,6 @@ const state = reactive({ desktop: true });
   <div>
     <div>
       <Breadcrumbs></Breadcrumbs>
-      <CategorySlider :categories="categories"></CategorySlider>
     </div>
     <section>
       <div class="flex flex-between flex-align-center">

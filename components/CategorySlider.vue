@@ -36,9 +36,9 @@ defineProps({
     >
       <SplideSlide v-for="category in categories">
         <CategoryItem
-          :name="category.name"
+          :name="category.title"
           :img="category.img"
-          :link="category.link"
+          :link="category.to"
         ></CategoryItem>
       </SplideSlide>
     </Splide>

@@ -1,6 +1,12 @@
 <script setup>
 import { reactive } from "vue";
 
+const route = useRoute();
+
+const props = defineProps({
+  links: { type: Array, required: true },
+});
+
 const products = [
   {
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
@@ -33,53 +39,13 @@ const products = [
     img: "/images/product.png",
   },
 ];
-const categories = [
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-  {
-    name: "Fødevare",
-    link: "/oversigt",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    name: "Kropspleje",
-    link: "/oversigt",
-    img: "/images/neauthy-skincare.jpg",
-  },
-  {
-    name: "Madopbevaring og servering",
-    link: "/oversigt",
-    img: "/images/ella-olsson.jpg",
-  },
-];
+
+const categories = props.links
+  .find((link) => link.title === route.params.category)
+  .subMenus.find(
+    (subMenu) => subMenu.title === route.params.subCategory
+  ).subSubMenus;
+
 const tags = ["Tør/moden", "Fedet"];
 
 const state = reactive({ desktop: true });
