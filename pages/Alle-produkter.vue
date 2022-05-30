@@ -1,6 +1,4 @@
 <script setup>
-import { reactive } from "vue";
-
 const props = defineProps({
   links: { type: Array, required: true },
 });
@@ -54,7 +52,7 @@ const categories = props.links;
 
 const tags = ["Tør/moden", "Fedet"];
 
-const state = reactive({ desktop: true });
+const state = reactive({ desktop: true, products: products });
 
 useHead({
   title: "Alle produkter",
@@ -70,19 +68,19 @@ useHead({
     <section>
       <div class="flex flex-between flex-align-center">
         <p class="text-gray" v-if="state.desktop">
-          {{ products.length }} resultater
+          {{ state.products.length }} resultater
         </p>
         <Filter></Filter>
       </div>
       <div class="flex flex-gap-1">
         <Tag v-for="tag in tags" :filter="tag"></Tag>
       </div>
-      <ProductGrid :products="products"></ProductGrid>
+      <ProductGrid :products="state.products"></ProductGrid>
     </section>
     <hr />
     <section>
       <SectionHeader title="Sidst set" link="/Alle-produkter"></SectionHeader>
-      <ProductSlider :products="products"></ProductSlider>
+      <ProductSlider :products="state.products"></ProductSlider>
     </section>
   </div>
 </template>
