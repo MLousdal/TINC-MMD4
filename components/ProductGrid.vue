@@ -12,6 +12,7 @@ defineProps({
       :price="product.price"
       :img="product.img"
       :link="product.link"
+      :tag="product.tag"
     ></Product>
   </div>
 </template>

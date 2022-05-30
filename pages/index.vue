@@ -1,39 +1,49 @@
 <script setup>
 const products = [
   {
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
-    img: "/images/product.png",
     tag: "Nedsat",
   },
   {
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
-    img: "/images/product.png",
-    tag: "Udsolgt",
-  },
-  {
-    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
-    price: "39,00",
-    link: "/product",
-    img: "/images/product.png",
     tag: "Nyhed",
   },
   {
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
-    img: "/images/product.png",
+    tag: "Udsolgt",
   },
   {
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
     name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
     price: "39,00",
-    link: "/product",
+    tag: "Nedsat",
+  },
+  {
     img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    tag: "Nyhed",
+  },
+  {
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39,00",
+    tag: "Udsolgt",
   },
 ];
+
 const categories = [
   {
     title: "Fødevare",

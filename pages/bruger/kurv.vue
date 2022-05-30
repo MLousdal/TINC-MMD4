@@ -1,18 +1,20 @@
 <script setup>
 const products = [
   {
-    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
-    price: "39,00",
-    link: "/product",
-    img: "/images/product.png",
     amount: 3,
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39.00",
+    tag: "Nedsat",
   },
   {
-    name: "Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
-    price: "1,20",
-    link: "/product",
-    img: "/images/denta.jpg",
-    amount: 1,
+    amount: 2,
+    img: "/images/product.png",
+    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
+    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
+    price: "39.00",
+    tag: "Nyhed",
   },
 ];
 
@@ -87,7 +89,7 @@ useHead({
             ><span>
               Handel for
               <span class="text-brand bold"
-                >{{ subTotal - 299 < 0 ? subTotal - 299 : 0 }} kr.</span
+                >{{ 299 - subTotal > 0 ? 299 - subTotal : 0 }} kr.</span
               >
               mere og få gratis fragt
             </span>
