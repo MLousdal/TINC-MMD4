@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: ["nuxt-shopify"],
 
   shopify: {
-    domain: "your-shop-name.myshopify.com",
-    storefrontAccessToken: "your-storefront-access-token",
+    domain: "mmd4-tinc-shop.myshopify.com",
+    storefrontAccessToken: "a40a2322983bd46d782851a069877656",
   },
 
   // runtimeConfig: {

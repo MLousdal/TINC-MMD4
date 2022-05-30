@@ -7,11 +7,32 @@ const blogPost = {
   title: "5 lette ændringer som gør dit badeværelse mere bæredygtigt",
 };
 
-defineProps({
+const props = defineProps({
   links: { type: Array, required: true },
 });
 
-const state = reactive({ isDesktop: true, mobileNavOpen: false });
+const extraLinks = [
+  {
+    title: "Forside",
+    to: "/",
+  },
+  {
+    title: "Blog",
+    to: "/",
+  },
+  {
+    title: "Om TINC",
+    to: "/",
+  },
+];
+
+const standardLinks = props.links.concat(...extraLinks);
+
+const state = reactive({
+  isDesktop: true,
+  mobileNavOpen: false,
+  currentLinks: standardLinks,
+});
 
 function updateIsDesktop() {
   const mediaQuery = window.matchMedia("(max-width: 1210px)");
@@ -25,6 +46,18 @@ function updateIsDesktop() {
 
 function closeMenu() {
   state.mobileNavOpen = false;
+  state.currentLinks = standardLinks;
+}
+
+function updateCurrentLinks(link) {
+  let newCurrentLinks = [link];
+  if (link.subMenus) {
+    newCurrentLinks.push(...link.subMenus);
+  }
+  if (link.subSubMenus) {
+    newCurrentLinks.push(...link.subSubMenus);
+  }
+  state.currentLinks = newCurrentLinks;
 }
 
 onMounted(() => {
@@ -93,63 +126,62 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <div class="mobile-nav-links" v-show="state.mobileNavOpen">
-      <input
-        id="navbar_checkbox"
-        v-model="state.mobileNavOpen"
-        type="checkbox"
-      />
-      <label for="navbar_checkbox" class="navBtn" v-show="!state.isDesktop">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
+      <div class="mobile-nav-links-buttons">
+        <input
+          id="navbar_checkbox"
+          v-model="state.mobileNavOpen"
+          type="checkbox"
+        />
+        <label
+          for="navbar_checkbox"
+          class="navBtn"
+          v-show="!state.isDesktop"
+          @click="state.currentLinks = standardLinks"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <button
+          v-show="
+            JSON.stringify(state.currentLinks) !== JSON.stringify(standardLinks)
+          "
+          @click="state.currentLinks = standardLinks"
+          class="mobile-nav-links-back"
+        >
+          <img src="/icons/arrow.svg" class="flip" alt="" />Tilbage
+        </button>
+      </div>
       <input type="text" placeholder="Søgefelt" class="searchfield" />
-      <NuxtLink
-        v-for="link in links"
-        :to="link.to"
+      <div
+        v-for="(link, index) in state.currentLinks"
+        :key="index"
         class="mobile-nav-links-link"
         :class="{
           'background-secondary':
             link.to == '/Personlig pleje/' ||
             link.to == '/Husholdning/' ||
-            link.to == '/Fødevare/',
+            link.to == '/Fødevare/' ||
+            index == 0,
         }"
-        @click="closeMenu"
       >
-        <img :src="link.img" :alt="link.title" class="mobile-nav-links-img" />{{
-          link.title
-        }}
+        <NuxtLink :to="link.to" @click="closeMenu">
+          <img
+            :src="link.img"
+            :alt="link.title"
+            class="mobile-nav-links-img"
+            v-if="link.img"
+          />{{ link.title }}
+        </NuxtLink>
         <input
           type="image"
           src="/icons/arrow.svg"
           alt=""
           class="mobile-nav-links-icon"
+          @click="updateCurrentLinks(link)"
+          v-if="link.subMenus || link.subSubMenus"
         />
-      </NuxtLink>
-      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
-        >Forside
-        <input
-          type="image"
-          src="/icons/arrow.svg"
-          alt=""
-          class="mobile-nav-links-icon"
-      /></NuxtLink>
-      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
-        >Blog
-        <input
-          type="image"
-          src="/icons/arrow.svg"
-          alt=""
-          class="mobile-nav-links-icon"
-      /></NuxtLink>
-      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
-        >Om TINC
-        <input
-          type="image"
-          src="/icons/arrow.svg"
-          alt=""
-          class="mobile-nav-links-icon"
-      /></NuxtLink>
+      </div>
     </div>
     <div class="user-links">
       <NuxtLink to="/bruger" aria-label="Bruger" class="user-links-icon"
