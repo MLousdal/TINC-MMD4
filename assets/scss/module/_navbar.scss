@@ -62,9 +62,7 @@
   padding-block: var(--size-3);
 
   &:hover .sub-menu-content,
-  &:focus .sub-menu-content,
-  a:hover ~ .sub-menu-content,
-  a:focus ~ .sub-menu-content {
+  a:hover ~ .sub-menu-content {
     display: flex;
   }
 }
@@ -159,10 +157,14 @@
   pointer-events: all;
 }
 
+#navbar_checkbox:checked ~ .mobile-nav-links {
+  left: 0;
+}
+
 .mobile-nav-links {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100vw;
   height: 100vh;
   z-index: 10;
@@ -170,10 +172,11 @@
   flex-direction: column;
   background-color: var(--surface-1);
   gap: var(--size-2);
+  transition: left 0.5s linear;
 
   &-link {
     display: grid;
-    grid-template-columns: 20% auto 10%;
+    grid-template-columns: 10% auto 10%;
     font-weight: var(--font-weight-7);
     align-items: center;
     gap: var(--size-5);
@@ -193,6 +196,7 @@
   &-icon {
     all: unset;
     grid-column: 3;
+    justify-self: flex-end;
   }
 
   .navBtn {

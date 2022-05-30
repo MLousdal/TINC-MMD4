@@ -3,7 +3,7 @@ const Links = [
   {
     img: "/images/neauthy-skincare.jpg",
     title: "Personlig pleje",
-    to: "/Personlig pleje",
+    to: "/Personlig pleje/",
     subMenus: [
       {
         img: "/images/neauthy-skincare.jpg",

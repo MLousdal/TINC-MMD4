@@ -1,6 +1,4 @@
 <script setup>
-import { reactive } from "vue";
-
 const route = useRoute();
 
 const props = defineProps({
@@ -45,6 +43,10 @@ const categories = props.links.find(
 ).subMenus;
 
 const tags = ["Tør/moden", "Fedet"];
+
+useHead({
+  title: route.params.category,
+});
 </script>
 
 <template>

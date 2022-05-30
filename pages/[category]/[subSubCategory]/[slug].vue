@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from "vue";
+const route = useRoute();
 
 const products = [
   {
@@ -35,6 +35,10 @@ const products = [
 ];
 
 const tags = ["Tør/moden", "Fedet"];
+
+useHead({
+  title: route.params.slug,
+});
 </script>
 
 <template>

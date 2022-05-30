@@ -29,6 +29,10 @@ const products = [
 const tags = ["Tør/moden", "Fedet"];
 
 const state = reactive({ desktop: true });
+
+useHead({
+  title: "Ønskeliste",
+});
 </script>
 
 <template>

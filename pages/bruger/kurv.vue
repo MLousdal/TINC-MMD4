@@ -27,6 +27,10 @@ onMounted(() => {
     addToTotal(product.amount, parseInt(product.price));
   });
 });
+
+useHead({
+  title: "Kurv",
+});
 </script>
 
 <template>

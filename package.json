@@ -9,6 +9,7 @@
     "format": "prettier .  --write"
   },
   "devDependencies": {
+    "@nuxtjs/robots": "^2.5.0",
     "@splidejs/vue-splide": "^0.6.4",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.15.0",

@@ -157,6 +157,10 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.body.classList.remove("hero-blob");
 });
+
+useHead({
+  title: "Forside",
+});
 </script>
 
 <template>

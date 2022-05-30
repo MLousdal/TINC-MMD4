@@ -35,12 +35,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("resize", updateIsDesktop);
 });
-
-watch(state.mobileNavOpen, (mobileNavOpen) => {
-  if (mobileNavOpen) {
-    document.body.style.overflow = "hidden";
-  }
-});
 </script>
 
 <template>
@@ -116,7 +110,7 @@ watch(state.mobileNavOpen, (mobileNavOpen) => {
         class="mobile-nav-links-link"
         :class="{
           'background-secondary':
-            link.to == '/Personlig pleje' ||
+            link.to == '/Personlig pleje/' ||
             link.to == '/Husholdning/' ||
             link.to == '/Fødevare/',
         }"

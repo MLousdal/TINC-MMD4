@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+useHead({
+  title: "Bruger",
+});
+</script>
 
 <template>
   <div class="profile">

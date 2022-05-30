@@ -43,6 +43,10 @@ const categories = props.links;
 const tags = ["Tør/moden", "Fedet"];
 
 const state = reactive({ desktop: true });
+
+useHead({
+  title: "Alle produkter",
+});
 </script>
 
 <template>
