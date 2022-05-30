@@ -23,6 +23,10 @@ function updateIsDesktop() {
   }
 }
 
+function closeMenu() {
+  state.mobileNavOpen = false;
+}
+
 onMounted(() => {
   window.addEventListener("resize", updateIsDesktop);
   updateIsDesktop();
@@ -32,14 +36,11 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateIsDesktop);
 });
 
-function toggleMobileNav() {
-  if (state.isDesktop) {
-    console.log("isDesktop:", state.isDesktop);
-    return;
+watch(state.mobileNavOpen, (mobileNavOpen) => {
+  if (mobileNavOpen) {
+    document.body.style.overflow = "hidden";
   }
-  state.mobileNavOpen = !state.mobileNavOpen;
-  console.log("mobileNavOpen:", state.mobileNavOpen);
-}
+});
 </script>
 
 <template>
@@ -97,7 +98,65 @@ function toggleMobileNav() {
         <NuxtLink to="/" class="underline">Om TINC</NuxtLink>
       </div>
     </div>
-    <div class="mobile-nav-links" v-show="state.mobileNavOpen"></div>
+    <div class="mobile-nav-links" v-show="state.mobileNavOpen">
+      <input
+        id="navbar_checkbox"
+        v-model="state.mobileNavOpen"
+        type="checkbox"
+      />
+      <label for="navbar_checkbox" class="navBtn" v-show="!state.isDesktop">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <input type="text" placeholder="Søgefelt" class="searchfield" />
+      <NuxtLink
+        v-for="link in links"
+        :to="link.to"
+        class="mobile-nav-links-link"
+        :class="{
+          'background-secondary':
+            link.to == '/Personlig pleje' ||
+            link.to == '/Husholdning/' ||
+            link.to == '/Fødevare/',
+        }"
+        @click="closeMenu"
+      >
+        <img :src="link.img" :alt="link.title" class="mobile-nav-links-img" />{{
+          link.title
+        }}
+        <input
+          type="image"
+          src="/icons/arrow.svg"
+          alt=""
+          class="mobile-nav-links-icon"
+        />
+      </NuxtLink>
+      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
+        >Forside
+        <input
+          type="image"
+          src="/icons/arrow.svg"
+          alt=""
+          class="mobile-nav-links-icon"
+      /></NuxtLink>
+      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
+        >Blog
+        <input
+          type="image"
+          src="/icons/arrow.svg"
+          alt=""
+          class="mobile-nav-links-icon"
+      /></NuxtLink>
+      <NuxtLink to="/" class="mobile-nav-links-link" @click="closeMenu"
+        >Om TINC
+        <input
+          type="image"
+          src="/icons/arrow.svg"
+          alt=""
+          class="mobile-nav-links-icon"
+      /></NuxtLink>
+    </div>
     <div class="user-links">
       <NuxtLink to="/bruger" aria-label="Bruger" class="user-links-icon"
         ><img src="/icons/user.svg"

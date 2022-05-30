@@ -162,5 +162,47 @@
 .mobile-nav-links {
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface-1);
+  gap: var(--size-2);
+
+  &-link {
+    display: grid;
+    grid-template-columns: 20% auto 10%;
+    font-weight: var(--font-weight-7);
+    align-items: center;
+    gap: var(--size-5);
+    padding: var(--size-fluid-2) var(--size-fluid-3);
+    border-bottom: var(--gray-5) var(--border-size-1) solid;
+  }
+
+  &-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius-blob-2);
+    box-shadow: var(--shadow-2);
+  }
+
+  &-icon {
+    all: unset;
+    grid-column: 3;
+  }
+
+  .navBtn {
+    top: var(--size-5);
+    right: var(--size-5);
+    margin: var(--size-fluid-2) var(--size-fluid-3) 0 var(--size-fluid-3);
+    align-self: flex-end;
+  }
+
+  .searchfield {
+    margin: var(--size-fluid-2) var(--size-fluid-3);
+  }
 }

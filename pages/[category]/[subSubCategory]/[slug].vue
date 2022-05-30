@@ -35,8 +35,6 @@ const products = [
 ];
 
 const tags = ["Tør/moden", "Fedet"];
-
-const state = reactive({ desktop: true });
 </script>
 
 <template>
@@ -46,9 +44,7 @@ const state = reactive({ desktop: true });
     </div>
     <section>
       <div class="flex flex-between flex-align-center">
-        <p class="text-gray" v-if="state.desktop">
-          {{ products.length }} resultater
-        </p>
+        <p class="text-gray">{{ products.length }} resultater</p>
         <Filter></Filter>
       </div>
       <div class="flex flex-gap-1">
