@@ -81,7 +81,7 @@ useHead({
     </section>
     <hr />
     <section>
-      <SectionHeader title="Sidst set" link="/oversigt"></SectionHeader>
+      <SectionHeader title="Sidst set" link="/Alle-produkter"></SectionHeader>
       <ProductSlider :products="products"></ProductSlider>
     </section>
   </div>

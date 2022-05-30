@@ -240,7 +240,7 @@ useHead({
     <section>
       <SectionHeader
         title="Om TINC"
-        link="/oversigt"
+        link="/Alle-produkter"
         more="læs mere"
       ></SectionHeader>
       <div class="om-tinc">
