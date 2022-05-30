@@ -1,9 +1,9 @@
 <script setup>
 defineProps({
-  img: { type: String, default: "se mere" },
-  link: { type: String, required: true },
-  name: { type: String, required: true },
-  price: { type: String, required: true },
+  img: { type: String, default: "" },
+  link: { type: String, required: false },
+  title: { type: String, required: false },
+  price: { type: String, required: false },
   amount: { type: Number },
   type: { type: String, default: "default" },
   gift: { type: Boolean, default: false },
@@ -14,24 +14,24 @@ defineProps({
 <template>
   <div class="product" v-if="type == 'default'">
     <NuxtLink :to="link" class="product-img-link">
-      <img :src="img" :alt="name" />
+      <img :src="img" :alt="title" />
     </NuxtLink>
     <div v-if="tag" class="product-tag" :class="tag">{{ tag }}</div>
     <FavoriteBtn></FavoriteBtn>
     <input type="image" src="/icons/addCart.svg" class="addToCartBtn" />
     <NuxtLink :to="link" class="product-text" tabindex="-1">
-      <p>{{ name }}</p>
+      <p>{{ title }}</p>
       <p class="bold">{{ price }} kr.</p>
     </NuxtLink>
   </div>
 
   <div class="product-cart" v-if="type == 'cart'">
     <NuxtLink :to="link" class="product-img-link">
-      <img :src="img" :alt="name" />
+      <img :src="img" :alt="title" />
     </NuxtLink>
     <input type="image" src="/icons/close.svg" class="removeFromCartBtn" />
     <NuxtLink :to="link" class="product-text">
-      <h5>{{ name }}</h5>
+      <h5>{{ title }}</h5>
       <p class="bold">{{ price }} kr.</p>
     </NuxtLink>
     <label

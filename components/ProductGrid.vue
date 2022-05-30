@@ -4,14 +4,16 @@ defineProps({
 });
 </script>
 
+<!-- better link :) -->
+
 <template>
   <div class="product-grid">
     <Product
       v-for="product in products"
-      :name="product.name"
-      :price="product.price"
-      :img="product.img"
-      :link="product.link"
+      :title="product.title"
+      :price="product.priceRange.minVariantPrice.amount"
+      :img="product.images.nodes[0].url"
+      :link="`/${product.productType}/${product.collections.nodes[0].title}/${product.tags[1]}/${product.title}`"
       :tag="product.tag"
     ></Product>
   </div>

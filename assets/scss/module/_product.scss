@@ -7,6 +7,10 @@
   &-img-link {
     overflow: hidden;
     padding: 0;
+    aspect-ratio: 1;
+    object-position: center;
+    display: grid;
+    place-items: center;
   }
 
   img {

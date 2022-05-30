@@ -2,6 +2,23 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  modules: ["nuxt-graphql-client"],
+
+  publicRuntimeConfig: {
+    "graphql-client": {
+      clients: {
+        default: {
+          host: "https://mmd4-tinc-shop.myshopify.com/api/2022-04/graphql.json",
+          token: {
+            type: null,
+            name: process.env.GQL_TOKEN_NAME,
+            value: process.env.GQL_TOKEN_VALUE,
+          },
+        },
+      },
+    },
+  },
+
   css: ["@/assets/scss/main.scss"],
 
   app: {

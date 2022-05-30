@@ -1,0 +1,24 @@
+query allProducts($first: Int = 20) {
+  products(first: $first) {
+    nodes {
+      title
+      tags
+      productType
+      priceRange {
+        minVariantPrice {
+          amount
+        }
+      }
+      images(first: 5) {
+        nodes {
+          url
+        }
+      }
+      collections(first: 2) {
+        nodes {
+          title
+        }
+      }
+    }
+  }
+}
