@@ -1,4 +1,8 @@
 <script setup>
+const route = useRoute();
+definePageMeta({
+  key: (route) => route.fullPath,
+});
 const Links = [
   {
     img: "/images/neauthy-skincare.jpg",
@@ -391,33 +395,33 @@ const Links = [
     subMenus: [
       {
         img: "/images/anh-nguyen.jpg",
-        title: "Mad og kolonial",
-        to: "/Fødevare/Mad og kolonial/",
+        title: "Mad - kolonial",
+        to: "/Fødevare/Mad - kolonial/",
         subSubMenus: [
           {
             img: "/images/anh-nguyen.jpg",
             title: "Kolonial",
-            to: "/Fødevare/Mad og kolonial/Kolonial",
+            to: "/Fødevare/Mad - kolonial/Kolonial",
           },
           {
             img: "/images/anh-nguyen.jpg",
             title: "Konfekture",
-            to: "/Fødevare/Mad og kolonial/Konfekture",
+            to: "/Fødevare/Mad - kolonial/Konfekture",
           },
           {
             img: "/images/anh-nguyen.jpg",
             title: "Krydderier, Urter, Blomster & Pulver",
-            to: "/Fødevare/Mad og kolonial/Krydderier, Urter, Blomster & Pulver",
+            to: "/Fødevare/Mad - kolonial/Krydderier, Urter, Blomster & Pulver",
           },
           {
             img: "/images/anh-nguyen.jpg",
             title: "Slik",
-            to: "/Fødevare/Mad og kolonial/Slik",
+            to: "/Fødevare/Mad - kolonial/Slik",
           },
           {
             img: "/images/anh-nguyen.jpg",
             title: "Tyggeegummi",
-            to: "/Fødevare/Mad og kolonial/Tyggeegummi",
+            to: "/Fødevare/Mad - kolonial/Tyggeegummi",
           },
         ],
       },
@@ -441,12 +445,39 @@ const Links = [
     ],
   },
 ];
+
+const collectionIDs = {
+  Tandpleje: "401022910699",
+  "Personlig pleje": "400981688555",
+  Drikkevare: "401021927659",
+  "Bad og sæbe": "400997122283",
+  Fødevare: "400981819627",
+  Tøjvask: "401022812395",
+  Rengøring: "401022812395",
+  Klude: "401022779627",
+  Tekstiler: "401022517483",
+  "Shampoo - Balsam": "401021796587",
+  "Mad - kolonial": "401022288107",
+  Kolonial: "401021894891",
+  "Glasflasker og beholdere": "401021960427",
+  Boligtilbehør: "401021862123",
+  Kosmetik: "400996991211",
+  Gavekort: "400984309995",
+  Husholdning: "400981655787",
+  Hår: "401021763819",
+  "Kaffe Te og Kakao": "401022025963",
+};
 </script>
 
 <template>
   <div>
     <Navbar :links="Links"></Navbar>
-    <NuxtPage class="wrapper app" :links="Links"></NuxtPage>
+    <NuxtPage
+      class="wrapper app"
+      :links="Links"
+      :collectionIDs="collectionIDs"
+      :key="(route) => route.fullPath"
+    ></NuxtPage>
     <Footer></Footer>
   </div>
 </template>
