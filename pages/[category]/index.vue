@@ -45,7 +45,10 @@ const tags = ["Tør/moden", "Fedet"];
       <div class="flex flex-gap-1">
         <Tag v-for="tag in tags" :filter="tag"></Tag>
       </div>
-      <ProductGrid :products="data.collection.products.nodes"></ProductGrid>
+      <ProductGrid
+        :products="data.collection.products.nodes"
+        :key="route.fullPath"
+      ></ProductGrid>
     </section>
     <hr />
     <section>

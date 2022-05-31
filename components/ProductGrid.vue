@@ -1,6 +1,4 @@
 <script setup>
-const route = useRouter();
-
 defineProps({
   products: { type: Array, required: true },
 });
@@ -15,7 +13,7 @@ defineProps({
       :title="product.title"
       :price="product.priceRange.minVariantPrice.amount"
       :img="product.images.nodes[0].url"
-      :link="`/${route.category}/${route.subCategory}/${route.slug}/${product.title}`"
+      :link="`/${product.title}`"
       :tag="product.tag"
     ></Product>
   </div>

@@ -1,5 +1,4 @@
 <script setup>
-const route = useRoute();
 definePageMeta({
   key: (route) => route.fullPath,
 });
@@ -445,7 +444,6 @@ const Links = [
     ],
   },
 ];
-
 const collectionIDs = {
   Tandpleje: "401022910699",
   "Personlig pleje": "400981688555",
@@ -476,7 +474,6 @@ const collectionIDs = {
       class="wrapper app"
       :links="Links"
       :collectionIDs="collectionIDs"
-      :key="(route) => route.fullPath"
     ></NuxtPage>
     <Footer></Footer>
   </div>
