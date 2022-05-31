@@ -4,8 +4,6 @@ defineProps({
 });
 </script>
 
-<!-- better link :) -->
-
 <template>
   <div class="product-grid">
     <Product
@@ -13,7 +11,7 @@ defineProps({
       :title="product.title"
       :price="product.priceRange.minVariantPrice.amount"
       :img="product.images.nodes[0].url"
-      :link="`/${product.title}`"
+      :link="`/${product.productType}/produkt/${product.id.slice(22)}`"
       :tag="product.tag"
     ></Product>
   </div>

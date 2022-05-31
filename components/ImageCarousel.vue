@@ -8,14 +8,14 @@ defineProps({
 const state = reactive({ currentImg: null });
 
 function changeImage(img) {
-  state.currentImg = img;
+  state.currentImg = img.url;
 }
 </script>
 
 <template>
   <div class="product-page-image-viewer">
     <img
-      :src="state.currentImg || images[0]"
+      :src="state.currentImg || images[0].url"
       alt=""
       class="product-page-image-image"
     />
@@ -34,7 +34,7 @@ function changeImage(img) {
       <SplideSlide v-for="image in images">
         <input
           type="image"
-          :src="image"
+          :src="image.url"
           alt=""
           class="product-page-image-input"
           @click="changeImage(image)"

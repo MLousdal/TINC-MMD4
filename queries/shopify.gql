@@ -1,6 +1,8 @@
 query allProducts($first: Int = 50) {
   products(first: $first) {
     nodes {
+      id
+      handle
       title
       tags
       productType
@@ -28,6 +30,8 @@ query allProductsInCategory($collection: ID, $first: Int = 50) {
     handle
     products(first: $first) {
       nodes {
+        id
+        handle
         title
         tags
         productType
@@ -46,6 +50,31 @@ query allProductsInCategory($collection: ID, $first: Int = 50) {
             title
           }
         }
+      }
+    }
+  }
+}
+
+query singleProduct($product: ID) {
+  product(id: $product) {
+    title
+    handle
+    tags
+    productType
+    descriptionHtml
+    priceRange {
+      minVariantPrice {
+        amount
+      }
+    }
+    images(first: 5) {
+      nodes {
+        url
+      }
+    }
+    collections(first: 2) {
+      nodes {
+        title
       }
     }
   }

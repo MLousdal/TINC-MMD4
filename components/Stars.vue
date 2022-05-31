@@ -5,6 +5,13 @@ defineProps({
 </script>
 
 <template>
+  <div class="flex flex-gap-2" v-if="rating == 0">
+    <img src="/icons/star.svg" alt="" class="star" />
+    <img src="/icons/star.svg" alt="" class="star" />
+    <img src="/icons/star.svg" alt="" class="star" />
+    <img src="/icons/star.svg" alt="" class="star" />
+    <img src="/icons/star.svg" alt="" class="star" />
+  </div>
   <div class="flex flex-gap-2" v-if="rating == 1">
     <img src="/icons/star-filled.svg" alt="" class="star" />
     <img src="/icons/star.svg" alt="" class="star" />

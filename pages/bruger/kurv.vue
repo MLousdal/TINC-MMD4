@@ -1,20 +1,34 @@
 <script setup>
 const products = [
   {
-    amount: 3,
-    img: "/images/product.png",
-    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
-    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
-    price: "39.00",
-    tag: "Nedsat",
+    amount: 2,
+    title: "Mikrogrønt - Frøsamling Mikrogrønt Øko 5Ps.",
+    tags: ["Kolonial", "Mad - Kolonial"],
+    productType: "Fødevare",
+    priceRange: { minVariantPrice: { amount: "125.0" } },
+    images: {
+      nodes: [
+        {
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9017011_428x428_44620d8f-1945-44ee-a241-ce0a4940f600.webp?v=1653984642",
+        },
+      ],
+    },
+    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
   },
   {
-    amount: 2,
-    img: "/images/product.png",
-    link: "/Personlig pleje/Tandpleje/Tandpleje/Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
-    name: "Bistad - Bivoks Wrap - Small / Medium / Large (3 stk)",
-    price: "39.00",
-    tag: "Nyhed",
+    amount: 1,
+    title: "Mikrogrønt - Bukkenhorn Øko",
+    tags: ["Kolonial", "Mad - Kolonial"],
+    productType: "Fødevare",
+    priceRange: { minVariantPrice: { amount: "25.0" } },
+    images: {
+      nodes: [
+        {
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9017007_428x428_df459806-f498-4d73-9ac9-a75b6341636d.webp?v=1653984578",
+        },
+      ],
+    },
+    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
   },
 ];
 
@@ -26,7 +40,10 @@ function addToTotal(amount, price) {
 
 onMounted(() => {
   products.forEach((product) => {
-    addToTotal(product.amount, parseInt(product.price));
+    addToTotal(
+      product.amount,
+      parseInt(product.priceRange.minVariantPrice.amount)
+    );
   });
 });
 
@@ -44,17 +61,18 @@ useHead({
       <div class="left">
         <Product
           v-for="product in products"
-          :name="product.name"
-          :price="product.price"
-          :img="product.img"
-          :link="product.link"
+          :title="product.title"
+          :price="product.priceRange.minVariantPrice.amount"
+          :img="product.images.nodes[0].url"
+          :link="`/${product.productType}/${product.title}`"
+          :tag="product.tag"
           :amount="product.amount"
           type="cart"
         ></Product>
         <article class="flex flex-column flex-gap">
           <h4>Få en gratis gave med i din ordre</h4>
           <Product
-            name="Lille gratis gave - 1 pr. køb"
+            title="Lille gratis gave - 1 pr. køb"
             price="0"
             img="/images/gift.png"
             link=""
@@ -71,8 +89,14 @@ useHead({
           <p>Forsendelse:</p>
           <span>Fra 49 kr.</span>
           <template v-for="product in products">
-            <p>{{ product.name }}:</p>
-            <span>{{ product.amount * parseInt(product.price) }} kr.</span>
+            <p>{{ product.title }}:</p>
+            <span
+              >{{
+                product.amount *
+                parseInt(product.priceRange.minVariantPrice.amount)
+              }}
+              kr.</span
+            >
           </template>
         </div>
         <form>

@@ -15,12 +15,17 @@ let currentCollectionID = `gid://shopify/Collection/${
     ? props.collectionIDs[route.params.category]
     : props.collectionIDs.Gavekort
 }`;
+// console.log("setup", currentCollectionID);
 
-let { data } = await useAsyncData("shopify", () =>
+let { data, error } = await useAsyncData("shopify", () =>
   GqlAllProductsInCategory({
     collection: currentCollectionID,
   })
 );
+
+const collection = ref(null);
+collection.value = data.value.collection;
+// console.log(collection.value);
 
 const categories = props.links.find(
   (link) => link.title === route.params.category
@@ -38,7 +43,7 @@ const tags = ["Tør/moden", "Fedet"];
     <section>
       <div class="flex flex-between flex-align-center">
         <p class="text-gray">
-          {{ data.collection.products.nodes.length }} resultater
+          {{ collection.products.nodes.length }} resultater
         </p>
         <Filter></Filter>
       </div>
@@ -46,14 +51,14 @@ const tags = ["Tør/moden", "Fedet"];
         <Tag v-for="tag in tags" :filter="tag"></Tag>
       </div>
       <ProductGrid
-        :products="data.collection.products.nodes"
+        :products="collection.products.nodes"
         :key="route.fullPath"
       ></ProductGrid>
     </section>
     <hr />
     <section>
       <SectionHeader title="Sidst set" link="/Alle-produkter"></SectionHeader>
-      <ProductSlider :products="data.collection.products.nodes"></ProductSlider>
+      <ProductSlider :products="collection.products.nodes"></ProductSlider>
     </section>
   </div>
 </template>
