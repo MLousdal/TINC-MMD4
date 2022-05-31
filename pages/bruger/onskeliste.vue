@@ -1,119 +1,70 @@
 <script setup>
 const products = [
   {
-    title: "Mikrogrønt - Frøsamling Mikrogrønt Øko 5Ps.",
-    tags: ["Kolonial", "Mad - Kolonial"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "125.0" } },
+    id: "gid://shopify/Product/7709201105131",
+    handle: "denttabs-tandpastapiller-uden-fluor-pris-pr-gram",
+    title: "Denttabs - Tandpastapiller uden Fluor (pris pr. gram)",
+    tags: ["Tandpleje"],
+    productType: "Personlig pleje",
+    priceRange: { minVariantPrice: { amount: "1.2" } },
     images: {
       nodes: [
         {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9017011_428x428_44620d8f-1945-44ee-a241-ce0a4940f600.webp?v=1653984642",
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/8206002-sw_1-sw_1000x1000_ba4634d5-b832-4744-be62-699457f3bdce.jpg?v=1653985983",
+        },
+        {
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/8206002-3-sw_1_1-sw_1000x1000_14c10c39-c116-4100-9d3c-203b071dfcb5.jpg?v=1653985983",
+        },
+        {
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/8206002-2-sw_1_1-sw_1000x1000_6dc3abcf-f662-40c1-85d6-696aba1ca2b6.jpg?v=1653985983",
         },
       ],
     },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
+    collections: {
+      nodes: [{ title: "Personlig pleje" }, { title: "Tandpleje" }],
+    },
   },
   {
-    title: "Mikrogrønt - Bukkenhorn Øko",
-    tags: ["Kolonial", "Mad - Kolonial"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "25.0" } },
+    id: "gid://shopify/Product/7709182230763",
+    handle: "handskaret-handsaebe-slice-of-sunshine-110-g",
+    title: "Håndskåret Håndsæbe Slice of Sunshine (110 g)",
+    tags: [
+      "Bad og sæbe",
+      "Håndsæbe",
+      "Kropspleje",
+      "Personlig pleje",
+      "Sæber og sæbeskåle",
+    ],
+    productType: "Personlig pleje",
+    priceRange: { minVariantPrice: { amount: "29.0" } },
     images: {
       nodes: [
         {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9017007_428x428_df459806-f498-4d73-9ac9-a75b6341636d.webp?v=1653984578",
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/3302059-sw_349x349_1b0e7e99-f119-4680-9099-745976a2e528.webp?v=1653985449",
         },
       ],
     },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
+    collections: {
+      nodes: [{ title: "Personlig pleje" }, { title: "Bad og sæbe" }],
+    },
   },
   {
-    title: "Hampebox Til Dyrkning 1Ltr. Øko",
-    tags: ["Kolonial", "Mad - Kolonial"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "60.0" } },
+    id: "gid://shopify/Product/7709179773163",
+    handle: "handskaret-handsaebe-jasmine-green-tea-swivel-ca-110-g",
+    title: "Håndskåret Håndsæbe Jasmine & Green Tea Swivel (ca 110 g)",
+    tags: ["Bad og sæbe", "Håndsæbe", "Kropspleje", "Sæber og sæbeskåle"],
+    productType: "Personlig pleje",
+    priceRange: { minVariantPrice: { amount: "29.0" } },
     images: {
       nodes: [
         {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9017002_428x428_e902abdf-3c67-40bf-98c7-b6eeaf676b97.webp?v=1653984449",
-        },
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/hampebox-2021-produkt_01_428x428_55b4687c-eae3-485a-a161-3ca4323e580a.webp?v=1653984449",
+          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/3302284-sw_349x349_3fcf5431-69b9-4336-8901-d1b323c4ceb6.webp?v=1653985381",
         },
       ],
     },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
-  },
-  {
-    title: "Bistad Honning (125 g)",
-    tags: ["Kolonial", "Mad - Kolinial"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "12.0" } },
-    images: {
-      nodes: [
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9004005_428x428_f54dee8a-2793-45a0-b44a-06dae594a9f8.webp?v=1653984404",
-        },
-      ],
+    collections: {
+      nodes: [{ title: "Personlig pleje" }, { title: "Bad og sæbe" }],
     },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Kolonial" }] },
-  },
-  {
-    title: "Økologisk Kakaopulver i løsvægt (pris pr. gram)",
-    tags: ["Drikkevare", "Kaffe Te og Kakao"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "0.2" } },
-    images: {
-      nodes: [
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9014002-sw_421x421_2e031590-c5f1-44bf-a4ed-6cd8548b5ce6.webp?v=1653984089",
-        },
-      ],
-    },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Drikkevare" }] },
-  },
-  {
-    title: "Økologisk Kakao Nibs i løsvægt (pris pr. gram)",
-    tags: ["Drikkevare", "Kaffe Te og Kakao"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "0.2" } },
-    images: {
-      nodes: [
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9014001-sw_421x421_429907c3-ee0d-4ab9-8221-e0355ead5381.webp?v=1653983945",
-        },
-      ],
-    },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Drikkevare" }] },
-  },
-  {
-    title: "Økologisk Hygge Te i løsvægt (pris pr. gram)",
-    tags: ["Drikkevare", "Kaffe Te og Kakao"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "0.49" } },
-    images: {
-      nodes: [
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9405010-sw_421x421_f8dd89d2-9cc5-4cb0-b7d1-45dccf7cf2c2.webp?v=1653983797",
-        },
-      ],
-    },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Drikkevare" }] },
-  },
-  {
-    title: "Økologisk Afslappende Aften Te i løsvægt (pris pr. gram)",
-    tags: ["Drikkevare", "Kaffe Te og Kakao"],
-    productType: "Fødevare",
-    priceRange: { minVariantPrice: { amount: "0.49" } },
-    images: {
-      nodes: [
-        {
-          url: "https://cdn.shopify.com/s/files/1/0646/3261/9243/products/9405013-sw_421x421_2470f3f5-4cba-4c4b-a12b-536de3119117.webp?v=1653983721",
-        },
-      ],
-    },
-    collections: { nodes: [{ title: "Fødevare" }, { title: "Drikkevare" }] },
   },
 ];
 
