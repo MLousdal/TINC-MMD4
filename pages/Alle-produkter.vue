@@ -3,7 +3,9 @@ const props = defineProps({
   links: { type: Array, required: true },
 });
 
-const { data, error } = await useAsyncData("shopify", () => GqlAllProducts());
+const { data: res } = await useAsyncData("shopify", () => GqlAllProducts());
+
+const products = ref(res.value.products);
 
 const categories = props.links;
 
@@ -27,19 +29,19 @@ useHead({
     <section>
       <div class="flex flex-between flex-align-center">
         <p class="text-gray" v-if="state.desktop">
-          {{ data.products.nodes.length }} resultater
+          {{ products.nodes.length }} resultater
         </p>
         <Filter></Filter>
       </div>
       <div class="flex flex-gap-1">
         <Tag v-for="tag in tags" :filter="tag"></Tag>
       </div>
-      <ProductGrid :products="data.products.nodes"></ProductGrid>
+      <ProductGrid :products="products.nodes"></ProductGrid>
     </section>
     <hr />
     <section>
       <SectionHeader title="Sidst set" link="/Alle-produkter"></SectionHeader>
-      <ProductSlider :products="data.products.nodes"></ProductSlider>
+      <ProductSlider :products="products.nodes"></ProductSlider>
     </section>
   </div>
 </template>

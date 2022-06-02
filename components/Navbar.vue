@@ -14,15 +14,15 @@ const props = defineProps({
 const extraLinks = [
   {
     title: "Forside",
-    to: "/",
+    to: "",
   },
   {
     title: "Blog",
-    to: "/",
+    to: "",
   },
   {
     title: "Om TINC",
-    to: "/",
+    to: "",
   },
 ];
 
@@ -119,10 +119,10 @@ onBeforeUnmount(() => {
       </div>
       |
       <div class="sub-menu">
-        <NuxtLink to="/" class="underline">Blog</NuxtLink>
+        <NuxtLink class="underline">Blog</NuxtLink>
       </div>
       <div class="sub-menu">
-        <NuxtLink to="/" class="underline">Om TINC</NuxtLink>
+        <NuxtLink class="underline">Om TINC</NuxtLink>
       </div>
     </div>
     <div class="mobile-nav-links" v-show="state.mobileNavOpen">

@@ -10,23 +10,17 @@ const props = defineProps({
   collectionIDs: { type: Object, required: true },
 });
 
-let currentCollectionID = `gid://shopify/Collection/${
-  props.collectionIDs[route.params.category] != null
-    ? props.collectionIDs[route.params.category]
-    : props.collectionIDs.Gavekort
-}`;
-// console.log("setup", currentCollectionID);
-
-let { data, error } = await useAsyncData("shopify", () =>
+let { data: response } = await useLazyAsyncData("shopify", () =>
   GqlAllProductsInCategory({
-    collection: currentCollectionID,
+    collection: `gid://shopify/Collection/${
+      props.collectionIDs[route.params.category] != null
+        ? props.collectionIDs[route.params.category]
+        : props.collectionIDs.Gavekort
+    }`,
   })
 );
 
-const collection = ref(null);
-collection.value = data.value.collection;
-// console.log(collection.value);
-
+let collection = ref(response.value.collection);
 const categories = props.links.find(
   (link) => link.title === route.params.category
 ).subMenus;
