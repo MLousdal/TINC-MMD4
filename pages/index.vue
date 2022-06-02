@@ -266,49 +266,39 @@ const products = [
 ];
 const categories = [
   {
+    img: "/images/anh-nguyen.jpg",
     title: "Fødevare",
     to: "/Fødevare/",
-    img: "/images/anh-nguyen.jpg",
   },
   {
+    img: "/images/neauthy-skincare.jpg",
     title: "Kropspleje",
     to: "/Personlig pleje/Kropspleje/",
-    img: "/images/neauthy-skincare.jpg",
   },
   {
+    img: "/images/ella-olsson.jpg",
     title: "Madopbevaring og servering",
     to: "/Husholdning/Madopbevaring/",
-    img: "/images/ella-olsson.jpg",
   },
   {
-    title: "Fødevare",
-    to: "/Fødevare/",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    title: "Kropspleje",
-    to: "/Personlig pleje/Kropspleje/",
     img: "/images/neauthy-skincare.jpg",
+    title: "Naturlig duft",
+    to: "/Personlig pleje/Natulige olier & kosmetriske råvare/Naturlig duft",
   },
   {
-    title: "Madopbevaring og servering",
-    to: "/Husholdning/Madopbevaring/",
-    img: "/images/ella-olsson.jpg",
-  },
-  {
-    title: "Fødevare",
-    to: "/Fødevare/",
-    img: "/images/anh-nguyen.jpg",
-  },
-  {
-    title: "Kropspleje",
-    to: "/Personlig pleje/Kropspleje/",
     img: "/images/neauthy-skincare.jpg",
+    title: "Shampoo - Balsam flydende",
+    to: "/Personlig pleje/Hår/Shampoo - Balsam flydende",
   },
   {
-    title: "Madopbevaring og servering",
-    to: "/Husholdning/Madopbevaring/",
     img: "/images/ella-olsson.jpg",
+    title: "Opvask",
+    to: "/Husholdning/Rengøring(sartikler)/Opvask",
+  },
+  {
+    img: "/images/neauthy-skincare.jpg",
+    title: "Kosmetik",
+    to: "/Personlig pleje/Kosmetik/",
   },
 ];
 const blogPosts = [
